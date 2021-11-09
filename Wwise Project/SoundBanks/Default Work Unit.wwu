@@ -1,6 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{80900218-C0C3-4B85-A31E-613F23516B5F}" SchemaVersion="103">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{80900218-C0C3-4B85-A31E-613F23516B5F}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{80900218-C0C3-4B85-A31E-613F23516B5F}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="GameSoundBank" ID="{219CEFAF-5775-4B6B-A398-8A1DAF23A8D4}">
+					<ObjectInclusionList>
+						<ObjectRef Name="game_start" ID="{AC841ACB-3D3F-4147-BD0C-44F2CE1EA35B}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_item_equip" ID="{E2ECE064-E8ED-414A-8B3A-A5E11502DEB9}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_barrel_break" ID="{55E63653-B9E8-4153-A337-9BCE60CCAA57}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_cactus_vox_hit" ID="{C5E8DABE-6E4F-4183-B6DB-8F7A2D27084E}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_boss_idle" ID="{B618FF60-C549-4203-A7E2-01AD243C86A6}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_moose_death" ID="{51E00809-B763-4242-88F1-6893E50BDBB0}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_potion_spawn" ID="{D0CE1FE9-12EE-427E-B641-29D6CFAFBB65}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_inventory_close" ID="{90CBB84F-69CE-42F6-84BD-2AAD492D96FF}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_moose_spur" ID="{FAA7A03A-B5C0-430A-B8BD-B7194CFE7E14}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_moose_laugh" ID="{81E32017-FF1F-4319-80FE-FAD3217905F6}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_boss_vox_attack" ID="{3B6FFE49-41D0-436F-8F92-E935C297D533}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_cactus_vox_attack" ID="{8EC16D71-070C-43E2-8BC8-E7C10F64E248}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_inventory_open" ID="{E4BC6F1B-394E-43FF-97E0-1DC32486D610}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_cactus_idle" ID="{605F7907-884F-444B-B0FF-C2C6783BA045}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_object_spawn" ID="{609A193F-6AB8-4451-9B60-8442A7C939E9}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_boss_death" ID="{638340C5-E8A9-455E-8567-02E05CD005E7}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_object_pickup" ID="{3F36D1F6-79A4-45B1-B0E8-CDB77E63B7E6}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_boss_vox_hit" ID="{85FB564C-7F2A-460C-9613-FB685FFDA27D}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_cactus_spotted" ID="{9F518035-9158-46CC-A448-6EFC5A686F44}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_moose_vox_attack" ID="{28A1E586-4752-470F-8B8D-CA91A7B4CC6D}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_moose_relieved" ID="{EC36C695-84B2-4711-B67F-D5B14E685BB0}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_ambience_far" ID="{82B47DF8-3324-47B0-9DD2-F7500CE63B5B}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_cactus_hit" ID="{F8780596-8330-4845-8579-F4B12E128713}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_cactus_footstep" ID="{FBEB33F2-C291-484F-879C-5ECA8B5F26B3}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_cactus_death" ID="{88DCAE72-5388-4852-9E49-8E533BC67175}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_weapon_impact" ID="{966B6390-8096-48E4-88C3-B8884D5B71FE}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_ambience_close" ID="{2C54184A-0126-48F8-954A-A0CCDA85557B}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_boss_slam" ID="{EB60E3E8-19AB-492E-946F-30B2F212F499}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_boss_footstep" ID="{05684C4D-6553-4969-9817-5F20FAA9C7A4}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_player_footstep" ID="{4434898C-6C5E-4A07-88F4-EDBB18DA390F}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_item_use" ID="{009D6503-F67E-4A12-BE2A-74A77D6A2FB4}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_moose_surprised" ID="{7C20DA50-6E75-4AD7-94C4-9375E6BAD3E9}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_player_hit" ID="{DB3691B3-561A-4B57-896A-C4FCD9025F8F}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_player_attack" ID="{EAA0C9A3-9881-4CAD-BDFD-A2FFBEFF70E2}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_rake_spawn" ID="{08D130BB-C62C-4CE7-B8F9-85A03257CC90}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_moose_footstep" ID="{A6D7CCC0-CB2D-4E31-8E6C-A0289412F066}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_boss_spotted" ID="{B446F75F-4AD0-4E51-9629-8B20D0E78527}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_enemy_idle" ID="{026FA443-E6B3-4FA1-BDB8-6599976BF5B7}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_moose_vox_hit" ID="{8E83D9AF-A06F-4FA9-8517-A53D899FCB1E}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundBanks>
 </WwiseDocument>

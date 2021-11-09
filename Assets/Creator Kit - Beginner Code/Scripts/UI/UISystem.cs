@@ -4,7 +4,7 @@ using CreatorKitCode;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace CreatorKitCodeInternal 
+namespace CreatorKitCodeInternal
 {
     /// <summary>
     /// Main class that handle the Game UI (health, open/close inventory)
@@ -12,7 +12,7 @@ namespace CreatorKitCodeInternal
     public class UISystem : MonoBehaviour
     {
         public static UISystem Instance { get; private set; }
-    
+
         [Header("Player")]
         public CharacterControl PlayerCharacter;
         public Slider PlayerHealthSlider;
@@ -25,7 +25,7 @@ namespace CreatorKitCodeInternal
         public Slider EnemyHealthSlider;
         public Text EnemyName;
         public EffectIconUI[] EnemyEffectIcones;
-    
+
         [Header("Inventory")]
         public InventoryUI InventoryWindow;
         public Button OpenInventoryButton;
@@ -38,7 +38,7 @@ namespace CreatorKitCodeInternal
         void Awake()
         {
             Instance = this;
-        
+
             InventoryWindow.Init();
         }
 
@@ -51,7 +51,7 @@ namespace CreatorKitCodeInternal
             {
                 TimedModifierIcones[i].gameObject.SetActive(false);
             }
-        
+
             for (int i = 0; i < EnemyEffectIcones.Length; ++i)
             {
                 EnemyEffectIcones[i].gameObject.SetActive(false);
@@ -67,11 +67,11 @@ namespace CreatorKitCodeInternal
         void UpdatePlayerUI()
         {
             CharacterData data = PlayerCharacter.Data;
-        
-            PlayerHealthSlider.value = PlayerCharacter.Data.Stats.CurrentHealth / (float) PlayerCharacter.Data.Stats.stats.health;
+
+            PlayerHealthSlider.value = PlayerCharacter.Data.Stats.CurrentHealth / (float)PlayerCharacter.Data.Stats.stats.health;
             MaxHealth.text = PlayerCharacter.Data.Stats.stats.health.ToString();
             CurrentHealth.text = PlayerCharacter.Data.Stats.CurrentHealth.ToString();
-        
+
             if (PlayerCharacter.CurrentTarget != null)
             {
                 UpdateEnemyUI(PlayerCharacter.CurrentTarget);
@@ -95,8 +95,8 @@ namespace CreatorKitCodeInternal
             {
                 TimedModifierIcones[i].gameObject.SetActive(false);
             }
-        
-                
+
+
             var stats = data.Stats.stats;
             StatsText.text = $"Str : {stats.strength} Def : {stats.defense} Agi : {stats.agility}";
         }
@@ -104,15 +104,15 @@ namespace CreatorKitCodeInternal
         void UpdateEnemyUI(CharacterData enemy)
         {
             EnemyHealthSlider.gameObject.SetActive(true);
-            EnemyHealthSlider.value = enemy.Stats.CurrentHealth / (float) enemy.Stats.stats.health;
+            EnemyHealthSlider.value = enemy.Stats.CurrentHealth / (float)enemy.Stats.stats.health;
             EnemyName.text = enemy.CharacterName;
 
             int top = enemy.Stats.ElementalEffects.Count;
-        
+
             for (int i = 0; i < top; ++i)
             {
                 var effect = enemy.Stats.ElementalEffects[i];
-            
+
                 EnemyEffectIcones[i].gameObject.SetActive(true);
                 EnemyEffectIcones[i].TimeSlider.value = effect.CurrentTime / effect.Duration;
             }
@@ -129,14 +129,17 @@ namespace CreatorKitCodeInternal
             {
                 ((Image)OpenInventoryButton.targetGraphic).sprite = m_ClosedInventorySprite;
                 InventoryWindow.gameObject.SetActive(false);
-                SFXManager.PlaySound(SFXManager.Use.Sound2D, new SFXManager.PlayData(){ Clip = CloseInventoryClip});
+                SFXManager.PlaySound(SFXManager.Use.Sound2D, new SFXManager.PlayData() { Clip = CloseInventoryClip });
+                AkSoundEngine.PostEvent("sfx_inventory_close", GameObject.Find("WwiseGlobal"));
             }
             else
             {
                 ((Image)OpenInventoryButton.targetGraphic).sprite = m_OpenInventorySprite;
                 InventoryWindow.gameObject.SetActive(true);
                 InventoryWindow.Load(PlayerCharacter.Data);
-                SFXManager.PlaySound(SFXManager.Use.Sound2D, new SFXManager.PlayData(){ Clip = OpenInventoryClip});
+                SFXManager.PlaySound(SFXManager.Use.Sound2D, new SFXManager.PlayData() { Clip = OpenInventoryClip });
+                AkSoundEngine.PostEvent("sfx_inventory_open", GameObject.Find("WwiseGlobal"));
+
             }
         }
     }

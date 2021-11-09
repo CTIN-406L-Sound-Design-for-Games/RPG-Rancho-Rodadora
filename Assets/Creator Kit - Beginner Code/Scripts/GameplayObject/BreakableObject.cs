@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using CreatorKitCode;
 using UnityEngine;
 
-namespace CreatorKitCodeInternal 
+namespace CreatorKitCodeInternal
 {
     /// <summary>
     /// Small class that will handle replacing a GameObject with another when the CharacterData on the same GameObject
@@ -15,11 +15,12 @@ namespace CreatorKitCodeInternal
     {
         public GameObject DestroyedChild;
         public AudioClip BreakingAudioClip;
-    
-    
+        public AK.Wwise.Event BreakingAudioEvent;
+
+
         CharacterData m_CharacterData;
         LootSpawner m_LootSpawner;
-    
+
         // Start is called before the first frame update
         void Start()
         {
@@ -35,12 +36,13 @@ namespace CreatorKitCodeInternal
             if (m_CharacterData.Stats.CurrentHealth == 0)
             {
                 m_LootSpawner.SpawnLoot();
-            
+
                 DestroyedChild.transform.SetParent(null);
                 DestroyedChild.gameObject.SetActive(true);
-            
+
                 SFXManager.PlaySound(SFXManager.Use.WorldSound, new SFXManager.PlayData() { Clip = BreakingAudioClip });
-            
+                BreakingAudioEvent.Post(this.gameObject);
+
                 Destroy(gameObject);
             }
         }

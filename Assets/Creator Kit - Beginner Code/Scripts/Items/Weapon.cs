@@ -7,7 +7,7 @@ using UnityEditor;
 using System.Linq;
 #endif
 
-namespace CreatorKitCode 
+namespace CreatorKitCode
 {
     /// <summary>
     /// Special case of EquipmentItem for weapon, as they have a whole attack system in addition. Like Equipment they
@@ -28,10 +28,10 @@ namespace CreatorKitCode
         {
             public CharacterData Target => m_Target;
             public CharacterData Source => m_Source;
-            
+
             CharacterData m_Target;
             CharacterData m_Source;
-        
+
             int[] m_Damages = new int[System.Enum.GetValues(typeof(StatSystem.DamageType)).Length];
 
             /// <summary>
@@ -62,20 +62,20 @@ namespace CreatorKitCode
                 if (damageType == StatSystem.DamageType.Physical)
                 {
                     //source cna be null when it's elemental or effect damage
-                    if(m_Source !=  null)
+                    if (m_Source != null)
                         addedAmount += Mathf.FloorToInt(addedAmount * m_Source.Stats.stats.strength * 0.01f);
-                
+
                     //each poitn of defense remove 1 damage, with a minimum of 1 damage
                     addedAmount = Mathf.Max(addedAmount - m_Target.Stats.stats.defense, 1);
                 }
-            
+
                 //we then add boost per damage type. Not this is called elementalBoost, but physical can also be boosted
-                if(m_Source != null)
+                if (m_Source != null)
                     addedAmount += addedAmount * Mathf.FloorToInt(m_Source.Stats.stats.elementalBoosts[(int)damageType] / 100.0f);
-            
+
                 //Then the elemental protection that is a percentage
                 addedAmount -= addedAmount * Mathf.FloorToInt(m_Target.Stats.stats.elementalProtection[(int)damageType] / 100.0f);
-            
+
                 m_Damages[(int)damageType] += addedAmount;
 
                 return addedAmount;
@@ -108,7 +108,7 @@ namespace CreatorKitCode
                 return totalDamage;
             }
         }
-    
+
         /// <summary>
         /// Base class of all effect you can add on a weapon to specialize it. See documentation on How to write a new
         /// Weapon Effect.
@@ -116,10 +116,10 @@ namespace CreatorKitCode
         public abstract class WeaponAttackEffect : ScriptableObject
         {
             public string Description;
-        
+
             //return the amount of physical damage. If no change, just return physicalDamage passed as parameter
             public virtual void OnAttack(CharacterData target, CharacterData user, ref AttackData data) { }
-        
+
             //called after all weapon effect where applied, allow to react to the total amount of damage applied
             public virtual void OnPostAttack(CharacterData target, CharacterData user, AttackData data) { }
 
@@ -128,7 +128,7 @@ namespace CreatorKitCode
                 return Description;
             }
         }
-    
+
         [System.Serializable]
         public struct Stat
         {
@@ -141,12 +141,12 @@ namespace CreatorKitCode
         [Header("Sounds")]
         public AudioClip[] HitSounds;
         public AudioClip[] SwingSounds;
-    
+
         [Header("Stats")]
-        public Stat Stats = new Stat(){ Speed = 1.0f, MaximumDamage = 1, MinimumDamage = 1, MaxRange = 1};
+        public Stat Stats = new Stat() { Speed = 1.0f, MaximumDamage = 1, MinimumDamage = 1, MaxRange = 1 };
 
         public List<WeaponAttackEffect> AttackEffects;
-    
+
         public void Attack(CharacterData attacker, CharacterData target)
         {
             AttackData attackData = new AttackData(target, attacker);
@@ -155,13 +155,13 @@ namespace CreatorKitCode
 
             attackData.AddDamage(StatSystem.DamageType.Physical, damage);
 
-            foreach(var wae in AttackEffects)
+            foreach (var wae in AttackEffects)
                 wae.OnAttack(target, attacker, ref attackData);
-       
+
             target.Damage(attackData);
-        
-            foreach(var wae in AttackEffects)
-                wae.OnPostAttack(target, attacker, attackData);     
+
+            foreach (var wae in AttackEffects)
+                wae.OnPostAttack(target, attacker, attackData);
         }
 
         public bool CanHit(CharacterData attacker, CharacterData target)
@@ -197,7 +197,7 @@ namespace CreatorKitCode
 
             return HitSounds[Random.Range(0, HitSounds.Length)];
         }
-    
+
         public AudioClip GetSwingSound()
         {
             if (SwingSounds == null || SwingSounds.Length == 0)
@@ -213,7 +213,7 @@ namespace CreatorKitCode
 public class WeaponEditor : Editor
 {
     Weapon m_Target;
-    
+
     ItemEditor m_ItemEditor;
 
     List<string> m_AvailableEquipEffectType;
@@ -224,11 +224,11 @@ public class WeaponEditor : Editor
 
     SerializedProperty m_HitSoundProps;
     SerializedProperty m_SwingSoundProps;
-    
+
     SerializedProperty m_MinimumStrengthProperty;
     SerializedProperty m_MinimumAgilityProperty;
     SerializedProperty m_MinimumDefenseProperty;
-    
+
     SerializedProperty m_WeaponStatProperty;
 
     [MenuItem("Assets/Create/Beginner Code/Weapon", priority = -999)]
@@ -236,10 +236,10 @@ public class WeaponEditor : Editor
     {
         var newWeapon = CreateInstance<Weapon>();
         newWeapon.Slot = (EquipmentItem.EquipmentSlot)666;
-        
+
         ProjectWindowUtil.CreateAsset(newWeapon, "weapon.asset");
     }
-    
+
     void OnEnable()
     {
         m_Target = target as Weapon;
@@ -249,12 +249,12 @@ public class WeaponEditor : Editor
         m_MinimumStrengthProperty = serializedObject.FindProperty(nameof(EquipmentItem.MinimumStrength));
         m_MinimumAgilityProperty = serializedObject.FindProperty(nameof(EquipmentItem.MinimumAgility));
         m_MinimumDefenseProperty = serializedObject.FindProperty(nameof(EquipmentItem.MinimumDefense));
-        
+
         m_WeaponStatProperty = serializedObject.FindProperty(nameof(Weapon.Stats));
 
         m_HitSoundProps = serializedObject.FindProperty(nameof(Weapon.HitSounds));
         m_SwingSoundProps = serializedObject.FindProperty(nameof(Weapon.SwingSounds));
-        
+
         m_ItemEditor = new ItemEditor();
         m_ItemEditor.Init(serializedObject);
 
@@ -264,7 +264,7 @@ public class WeaponEditor : Editor
             .Where(x => x.IsClass && !x.IsAbstract && x.IsSubclassOf(lookup))
             .Select(type => type.Name)
             .ToList();
-        
+
         lookup = typeof(Weapon.WeaponAttackEffect);
         m_AvailableWeaponAttackEffectType = System.AppDomain.CurrentDomain.GetAssemblies()
             .SelectMany(assembly => assembly.GetTypes())
@@ -280,30 +280,30 @@ public class WeaponEditor : Editor
         EditorGUILayout.PropertyField(m_MinimumStrengthProperty);
         EditorGUILayout.PropertyField(m_MinimumAgilityProperty);
         EditorGUILayout.PropertyField(m_MinimumDefenseProperty);
-        
+
         //EditorGUILayout.PropertyField(m_WeaponStatProperty, true);
         var child = m_WeaponStatProperty.Copy();
         var depth = child.depth;
         child.NextVisible(true);
-        
+
         EditorGUILayout.LabelField("Weapon Stats", EditorStyles.boldLabel);
         while (child.depth > depth)
         {
             EditorGUILayout.PropertyField(child, true);
             child.NextVisible(false);
         }
-        
+
         EditorGUILayout.PropertyField(m_HitSoundProps, true);
         EditorGUILayout.PropertyField(m_SwingSoundProps, true);
-        
+
         int choice = EditorGUILayout.Popup("Add new Equipment Effect", -1, m_AvailableEquipEffectType.ToArray());
 
         if (choice != -1)
         {
             var newInstance = ScriptableObject.CreateInstance(m_AvailableEquipEffectType[choice]);
-            
+
             AssetDatabase.AddObjectToAsset(newInstance, target);
-            
+
             m_EquippedEffectListProperty.InsertArrayElementAtIndex(m_EquippedEffectListProperty.arraySize);
             m_EquippedEffectListProperty.GetArrayElementAtIndex(m_EquippedEffectListProperty.arraySize - 1).objectReferenceValue = newInstance;
         }
@@ -315,11 +315,11 @@ public class WeaponEditor : Editor
         {
             EditorGUILayout.BeginHorizontal();
             EditorGUILayout.BeginVertical();
-            var item = m_EquippedEffectListProperty.GetArrayElementAtIndex(i);           
+            var item = m_EquippedEffectListProperty.GetArrayElementAtIndex(i);
             SerializedObject obj = new SerializedObject(item.objectReferenceValue);
 
             Editor.CreateCachedEditor(item.objectReferenceValue, null, ref ed);
-            
+
             ed.OnInspectorGUI();
             EditorGUILayout.EndVertical();
 
@@ -334,35 +334,35 @@ public class WeaponEditor : Editor
         {
             var item = m_EquippedEffectListProperty.GetArrayElementAtIndex(toDelete).objectReferenceValue;
             DestroyImmediate(item, true);
-            
+
             //need to do it twice, first time just nullify the entry, second actually remove it.
             m_EquippedEffectListProperty.DeleteArrayElementAtIndex(toDelete);
             m_EquippedEffectListProperty.DeleteArrayElementAtIndex(toDelete);
         }
-        
+
         //attack
         choice = EditorGUILayout.Popup("Add new Weapon Attack Effect", -1, m_AvailableWeaponAttackEffectType.ToArray());
 
         if (choice != -1)
         {
             var newInstance = ScriptableObject.CreateInstance(m_AvailableWeaponAttackEffectType[choice]);
-            
+
             AssetDatabase.AddObjectToAsset(newInstance, target);
-            
+
             m_WeaponAttackEffectListProperty.InsertArrayElementAtIndex(m_WeaponAttackEffectListProperty.arraySize);
             m_WeaponAttackEffectListProperty.GetArrayElementAtIndex(m_WeaponAttackEffectListProperty.arraySize - 1).objectReferenceValue = newInstance;
         }
-        
+
         toDelete = -1;
         for (int i = 0; i < m_WeaponAttackEffectListProperty.arraySize; ++i)
         {
             EditorGUILayout.BeginHorizontal();
             EditorGUILayout.BeginVertical();
-            var item = m_WeaponAttackEffectListProperty.GetArrayElementAtIndex(i);           
+            var item = m_WeaponAttackEffectListProperty.GetArrayElementAtIndex(i);
             SerializedObject obj = new SerializedObject(item.objectReferenceValue);
 
             Editor.CreateCachedEditor(item.objectReferenceValue, null, ref ed);
-            
+
             ed.OnInspectorGUI();
             EditorGUILayout.EndVertical();
 
@@ -377,7 +377,7 @@ public class WeaponEditor : Editor
         {
             var item = m_WeaponAttackEffectListProperty.GetArrayElementAtIndex(toDelete).objectReferenceValue;
             DestroyImmediate(item, true);
-            
+
             //need to do it twice, first time just nullify the entry, second actually remove it.
             m_WeaponAttackEffectListProperty.DeleteArrayElementAtIndex(toDelete);
             m_WeaponAttackEffectListProperty.DeleteArrayElementAtIndex(toDelete);

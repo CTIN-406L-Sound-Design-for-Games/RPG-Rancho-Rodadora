@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a90fa9150547492aa6490b3f8e687d9, type: 3}
+  m_Name: FAA7A03A-B5C0-430A-B8BD-B7194CFE7E14
+  m_EditorClassIdentifier: 
+  objectName: sfx_moose_spur
+  id: 2841481115
+  guid: FAA7A03A-B5C0-430A-B8BD-B7194CFE7E14

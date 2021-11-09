@@ -7,7 +7,7 @@ using UnityEngine.Analytics;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-namespace CreatorKitCodeInternal 
+namespace CreatorKitCodeInternal
 {
     /// <summary>
     /// Handle all the UI code related to the inventory (drag'n'drop of object, using objects, equipping object etc.)
@@ -19,35 +19,35 @@ namespace CreatorKitCodeInternal
             public ItemEntryUI DraggedEntry;
             public RectTransform OriginalParent;
         }
-    
+
         public RectTransform[] ItemSlots;
-    
+
         public ItemEntryUI ItemEntryPrefab;
         public ItemTooltip Tooltip;
- 
+
         public EquipmentUI EquipementUI;
 
 
         public Canvas DragCanvas;
-    
+
         public DragData CurrentlyDragged { get; set; }
         public CanvasScaler DragCanvasScaler { get; private set; }
-    
+
         public CharacterData Character
         {
             get { return m_Data; }
         }
-    
+
         ItemEntryUI[] m_ItemEntries;
         ItemEntryUI m_HoveredItem;
         CharacterData m_Data;
-    
+
         public void Init()
         {
             CurrentlyDragged = null;
 
             DragCanvasScaler = DragCanvas.GetComponentInParent<CanvasScaler>();
-        
+
             m_ItemEntries = new ItemEntryUI[ItemSlots.Length];
 
             for (int i = 0; i < m_ItemEntries.Length; ++i)
@@ -57,7 +57,7 @@ namespace CreatorKitCodeInternal
                 m_ItemEntries[i].Owner = this;
                 m_ItemEntries[i].InventoryEntry = i;
             }
-        
+
             EquipementUI.Init(this);
         }
 
@@ -80,9 +80,22 @@ namespace CreatorKitCodeInternal
 
         public void ObjectDoubleClicked(InventorySystem.InventoryEntry usedItem)
         {
-            if(m_Data.Inventory.UseItem(usedItem))
-                SFXManager.PlaySound(SFXManager.Use.Sound2D, new SFXManager.PlayData() {Clip = usedItem.Item is EquipmentItem ? SFXManager.ItemEquippedSound : SFXManager.ItemUsedSound} );
-        
+            if (m_Data.Inventory.UseItem(usedItem))
+            {
+                if (usedItem.Item is EquipmentItem)
+                {
+                    SFXManager.PlaySound(SFXManager.Use.Sound2D, new SFXManager.PlayData() { Clip = SFXManager.ItemEquippedSound });
+                    AkSoundEngine.PostEvent("sfx_item_equip", GameObject.Find("WwiseGlobal"));
+                }
+                else
+                {
+                    SFXManager.PlaySound(SFXManager.Use.Sound2D, new SFXManager.PlayData() { Clip = SFXManager.ItemUsedSound });
+                    AkSoundEngine.PostEvent("sfx_item_use", GameObject.Find("WwiseGlobal"));
+                }
+                //SFXManager.PlaySound(SFXManager.Use.Sound2D, new SFXManager.PlayData() {Clip = usedItem.Item is EquipmentItem ? SFXManager.ItemEquippedSound : SFXManager.ItemUsedSound} );
+            }
+
+
             ObjectHoverExited(m_HoveredItem);
             Load(m_Data);
         }
@@ -93,11 +106,11 @@ namespace CreatorKitCodeInternal
             ObjectHoverExited(m_HoveredItem);
             Load(m_Data);
         }
-    
+
         public void ObjectHoveredEnter(ItemEntryUI hovered)
         {
             m_HoveredItem = hovered;
-        
+
             Tooltip.gameObject.SetActive(true);
 
             Item itemUsed = m_HoveredItem.InventoryEntry != -1 ? m_Data.Inventory.Entries[m_HoveredItem.InventoryEntry].Item : m_HoveredItem.EquipmentItem;
@@ -130,7 +143,7 @@ namespace CreatorKitCodeInternal
                         m_Data.Inventory.Entries[i] = prevItem;
 
                         CurrentlyDragged.DraggedEntry.UpdateEntry();
-                        m_ItemEntries[i].UpdateEntry(); 
+                        m_ItemEntries[i].UpdateEntry();
                     }
                 }
             }

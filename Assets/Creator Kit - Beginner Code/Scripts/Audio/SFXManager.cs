@@ -8,7 +8,7 @@ using Random = UnityEngine.Random;
 using UnityEditor;
 #endif
 
-namespace CreatorKitCode 
+namespace CreatorKitCode
 {
     /// <summary>
     /// Class that handle all the SFX. Through its functions you can play a SFX of a given type at a given position.
@@ -37,8 +37,10 @@ namespace CreatorKitCode
             public float PitchMax = 1.0f;
 
             public float Volume = 1.0f;
+
+            public GameObject gameObject;
         }
-    
+
         static SFXManager Instance { get; set; }
 
         public AudioListener Listener;
@@ -50,16 +52,16 @@ namespace CreatorKitCode
         public AudioClip DefaultItemUsedSound;
         public AudioClip DefaultItemEquipedSound;
         public AudioClip DefaultPickupSound;
-    
+
         public static AudioClip ItemUsedSound => Instance.DefaultItemUsedSound;
         public static AudioClip ItemEquippedSound => Instance.DefaultItemEquipedSound;
         public static AudioClip PickupSound => Instance.DefaultPickupSound;
-    
+
         [SerializeField]
         AudioSource[] m_Prefabs;
         [SerializeField]
         int[] m_PoolAmount;
-    
+
         Queue<AudioSource>[] m_Instances;
 
         void Awake()
@@ -109,15 +111,21 @@ namespace CreatorKitCode
         /// </summary>
         /// <param name="useType">The type of sound (map to a specific mixer)</param>
         /// <param name="data">The PlayData that contains all the data of the sound to play (clip, volume, position etc.)</param>
-        public static void PlaySound(Use useType, PlayData data)
+        public static void PlaySound(Use useType, PlayData data, GameObject gameObject = null)
         {
-            var source = GetSource(useType);
+            Debug.Log("PlaySound() useType: " + useType + "   data.Clip.name : " + data.Clip.name + "   data.Position: " + data.Position);
 
+            //get the right audiosource
+            var source = GetSource(useType);   // usetype is either Player, Enemies, WorldSound, Sound2D
+            //assign the clip to the audiosource
             source.clip = data.Clip;
+            //position the audiosource
             source.gameObject.transform.position = data.Position;
+            //give it a random pitch if applicable
             source.pitch = Random.Range(data.PitchMin, data.PitchMax);
+            //set the volume
             source.volume = data.Volume;
-        
+            //then play it
             source.Play();
         }
 
@@ -127,7 +135,7 @@ namespace CreatorKitCode
 
             return clipArray[Random.Range(0, clipArray.Length)];
         }
-    
+
         public static AudioClip GetDefaultHit()
         {
             var clipArray = Instance.DefaultHitSound;
@@ -150,7 +158,7 @@ public class SFXManagerEditor : Editor
     SerializedProperty m_DefaultItemUsedSound;
     SerializedProperty m_DefaultItemEquippedSound;
     SerializedProperty m_DefaultPickupSoundProp;
-    
+
     void OnEnable()
     {
         m_PrefabsArrayProp = serializedObject.FindProperty("m_Prefabs");
@@ -164,7 +172,7 @@ public class SFXManagerEditor : Editor
         m_DefaultItemUsedSound = serializedObject.FindProperty(nameof(SFXManager.DefaultItemUsedSound));
         m_DefaultItemEquippedSound = serializedObject.FindProperty(nameof(SFXManager.DefaultItemEquipedSound));
         m_DefaultPickupSoundProp = serializedObject.FindProperty(nameof(SFXManager.DefaultPickupSound));
-        
+
         int useSize = Enum.GetValues(typeof(SFXManager.Use)).Length;
         if (m_PrefabsArrayProp.arraySize != useSize)
             m_PrefabsArrayProp.arraySize = useSize;
@@ -177,7 +185,7 @@ public class SFXManagerEditor : Editor
     public override void OnInspectorGUI()
     {
         serializedObject.Update();
-        
+
         EditorGUILayout.LabelField("Listener Info");
         EditorGUILayout.PropertyField(m_ListenerProp);
         EditorGUILayout.PropertyField(m_ListenerTargetProp);
@@ -187,7 +195,7 @@ public class SFXManagerEditor : Editor
         EditorGUILayout.PropertyField(m_DefaultItemUsedSound);
         EditorGUILayout.PropertyField(m_DefaultItemEquippedSound);
         EditorGUILayout.PropertyField(m_DefaultPickupSoundProp);
-        
+
         EditorGUILayout.LabelField("Prefab Per Use");
 
         float saveWidth = EditorGUIUtility.labelWidth;
@@ -200,7 +208,7 @@ public class SFXManagerEditor : Editor
             EditorGUILayout.EndHorizontal();
         }
         EditorGUIUtility.labelWidth = saveWidth;
-        
+
         serializedObject.ApplyModifiedProperties();
     }
 }

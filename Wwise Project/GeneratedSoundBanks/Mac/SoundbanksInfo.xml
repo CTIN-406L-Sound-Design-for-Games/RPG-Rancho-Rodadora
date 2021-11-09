@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>/Users/michaelsweet/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/GoogleDrive/_CloudSync/Work/USC/GIT/RPG-Rancho-Rodadora/Wwise Project/</ProjectRoot>
+		<SourceFilesRoot>/Users/michaelsweet/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/GoogleDrive/_CloudSync/Work/USC/GIT/RPG-Rancho-Rodadora/Wwise Project/.cache/Mac/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/michaelsweet/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/GoogleDrive/_CloudSync/Work/USC/GIT/RPG-Rancho-Rodadora/Wwise Project/GeneratedSoundBanks/Mac/</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>/Users/michaelsweet/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/GoogleDrive/_CloudSync/Work/USC/GIT/RPG-Rancho-Rodadora/Wwise Project/GeneratedSoundBanks/Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="460270446" Language="SFX" Hash="1491322418">
+			<ObjectPath>\SoundBanks\Default Work Unit\GameSoundBank</ObjectPath>
+			<ShortName>GameSoundBank</ShortName>
+			<Path>GameSoundBank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="733168346" Name="game_start" ObjectPath="\Events\Default Work Unit\game_start" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="628644712" Language="SFX">
+							<ShortName>loop_1.wav</ShortName>
+							<Path>SFX/loop_1_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{A61E93EC-CB78-4896-8013-DB8FF4B46B13}">
+							<Media>
+								<File Id="628644712"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+					<ActionSetState>
+						<ActionSetStateEntry Id="89505537" Name="gameplay" ObjectPath="\States\Default Work Unit\game_state_group\gameplay"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="1844429136" Name="sfx_ambience_close" ObjectPath="\Events\Default Work Unit\sfx_ambience\sfx_ambience_close" DurationType="OneShot" DurationMin="0.100000" DurationMax="0.100000"/>
+				<Event Id="2098933247" Name="sfx_ambience_far" ObjectPath="\Events\Default Work Unit\sfx_ambience\sfx_ambience_far" DurationType="OneShot" DurationMin="0.100000" DurationMax="0.100000"/>
+				<Event Id="3160813989" Name="sfx_barrel_break" ObjectPath="\Events\Default Work Unit\sfx_items\sfx_barrel_break" DurationType="OneShot" DurationMin="0.100000" DurationMax="0.100000"/>
+				<Event Id="3464347765" Name="sfx_boss_death" ObjectPath="\Events\Default Work Unit\sfx_boss\sfx_boss_death" DurationType="OneShot" DurationMin="0.100000" DurationMax="0.100000"/>
+				<Event Id="2035754667" Name="sfx_boss_footstep" ObjectPath="\Events\Default Work Unit\sfx_boss\sfx_boss_footstep" DurationType="OneShot" DurationMin="0.100000" DurationMax="0.100000"/>
+				<Event Id="345945556" Name="sfx_boss_hit" ObjectPath="\Events\Default Work Unit\sfx_boss\sfx_boss_hit" DurationType="OneShot" DurationMin="0.100000" DurationMax="0.100000"/>
+				<Event Id="4146176171" Name="sfx_boss_idle" ObjectPath="\Events\Default Work Unit\sfx_boss\sfx_boss_idle" DurationType="OneShot" DurationMin="0.100000" DurationMax="0.100000"/>
+				<Event Id="3227268106" Name="sfx_boss_slam" ObjectPath="\Events\Default Work Unit\sfx_boss\sfx_boss_slam" DurationType="OneShot" DurationMin="0.100000" DurationMax="0.100000"/>
+				<Event Id="1587564420" Name="sfx_boss_spotted" ObjectPath="\Events\Default Work Unit\sfx_boss\sfx_boss_spotted" DurationType="OneShot" DurationMin="0.100000" DurationMax="0.100000"/>
+				<Event Id="2747743591" Name="sfx_boss_vox_attack" ObjectPath="\Events\Default Work Unit\sfx_boss\sfx_boss_vox_attack" DurationType="OneShot" DurationMin="0.100000" DurationMax="0.100000"/>
+				<Event Id="3490519078" Name="sfx_boss_vox_hit" ObjectPath="\Events\Default Work Unit\sfx_boss\sfx_boss_vox_hit" DurationType="OneShot" DurationMin="0.100000" DurationMax="0.100000"/>
+				<Event Id="1603733443" Name="sfx_cactus_death" ObjectPath="\Events\Default Work Unit\sfx_cactus\sfx_cactus_death" DurationType="OneShot" DurationMin="0.100000" DurationMax="0.100000"/>
+				<Event Id="1846524869" Name="sfx_cactus_footstep" ObjectPath="\Events\Default Work Unit\sfx_cactus\sfx_cactus_footstep" DurationType="OneShot" DurationMin="0.100000" DurationMax="0.100000"/>
+				<Event Id="3300443410" Name="sfx_cactus_hit" ObjectPath="\Events\Default Work Unit\sfx_cactus\sfx_cactus_hit" DurationType="OneShot" DurationMin="0.100000" DurationMax="0.100000"/>
+				<Event Id="1756829421" Name="sfx_cactus_idle" ObjectPath="\Events\Default Work Unit\sfx_cactus\sfx_cactus_idle" DurationType="OneShot" DurationMin="0.100000" DurationMax="0.100000"/>
+				<Event Id="2798893922" Name="sfx_cactus_spotted" ObjectPath="\Events\Default Work Unit\sfx_cactus\sfx_cactus_spotted" DurationType="OneShot" DurationMin="0.100000" DurationMax="0.100000"/>
+				<Event Id="527156789" Name="sfx_cactus_vox_attack" ObjectPath="\Events\Default Work Unit\sfx_cactus\sfx_cactus_vox_attack" DurationType="OneShot" DurationMin="0.100000" DurationMax="0.100000"/>
+				<Event Id="4157505992" Name="sfx_cactus_vox_hit" ObjectPath="\Events\Default Work Unit\sfx_cactus\sfx_cactus_vox_hit" DurationType="OneShot" DurationMin="0.100000" DurationMax="0.100000"/>
+				<Event Id="1226390608" Name="sfx_enemy_idle" ObjectPath="\Events\Default Work Unit\sfx_enemy\sfx_enemy_idle" DurationType="OneShot" DurationMin="0.100000" DurationMax="0.100000"/>
+				<Event Id="3105589666" Name="sfx_inventory_close" ObjectPath="\Events\Default Work Unit\sfx_items\sfx_inventory_close" DurationType="OneShot" DurationMin="0.100000" DurationMax="0.100000"/>
+				<Event Id="3227255030" Name="sfx_inventory_open" ObjectPath="\Events\Default Work Unit\sfx_items\sfx_inventory_open" DurationType="OneShot" DurationMin="0.100000" DurationMax="0.100000"/>
+				<Event Id="1558985537" Name="sfx_item_equip" ObjectPath="\Events\Default Work Unit\sfx_items\sfx_item_equip" DurationType="OneShot" DurationMin="0.100000" DurationMax="0.100000"/>
+				<Event Id="108203516" Name="sfx_item_use" ObjectPath="\Events\Default Work Unit\sfx_items\sfx_item_use" DurationType="OneShot" DurationMin="0.100000" DurationMax="0.100000"/>
+				<Event Id="2344299311" Name="sfx_moose_death" ObjectPath="\Events\Default Work Unit\sfx_moose\sfx_moose_death" DurationType="OneShot" DurationMin="0.100000" DurationMax="0.100000"/>
+				<Event Id="2100214689" Name="sfx_moose_footstep" ObjectPath="\Events\Default Work Unit\sfx_moose\sfx_moose_footstep" DurationType="OneShot" DurationMin="0.100000" DurationMax="0.100000"/>
+				<Event Id="2325714778" Name="sfx_moose_laugh" ObjectPath="\Events\Default Work Unit\sfx_moose\sfx_moose_laugh" DurationType="OneShot" DurationMin="0.100000" DurationMax="0.100000"/>
+				<Event Id="301602619" Name="sfx_moose_relieved" ObjectPath="\Events\Default Work Unit\sfx_moose\sfx_moose_relieved" DurationType="OneShot" DurationMin="0.100000" DurationMax="0.100000"/>
+				<Event Id="2841481115" Name="sfx_moose_spur" ObjectPath="\Events\Default Work Unit\sfx_moose\sfx_moose_spur" DurationType="OneShot" DurationMin="0.100000" DurationMax="0.100000"/>
+				<Event Id="4102455534" Name="sfx_moose_surprised" ObjectPath="\Events\Default Work Unit\sfx_moose\sfx_moose_surprised" DurationType="OneShot" DurationMin="0.100000" DurationMax="0.100000"/>
+				<Event Id="4192314393" Name="sfx_moose_vox_attack" ObjectPath="\Events\Default Work Unit\sfx_moose\sfx_moose_vox_attack" DurationType="OneShot" DurationMin="0.100000" DurationMax="0.100000"/>
+				<Event Id="3854884700" Name="sfx_moose_vox_hit" ObjectPath="\Events\Default Work Unit\sfx_moose\sfx_moose_vox_hit" DurationType="OneShot" DurationMin="0.100000" DurationMax="0.100000"/>
+				<Event Id="4121100347" Name="sfx_object_pickup" ObjectPath="\Events\Default Work Unit\sfx_items\sfx_object_pickup" DurationType="OneShot" DurationMin="0.100000" DurationMax="0.100000"/>
+				<Event Id="1593364892" Name="sfx_object_spawn" ObjectPath="\Events\Default Work Unit\sfx_items\sfx_object_spawn" DurationType="OneShot" DurationMin="0.100000" DurationMax="0.100000"/>
+				<Event Id="3453059881" Name="sfx_player_attack" ObjectPath="\Events\Default Work Unit\sfx_player\sfx_player_attack" DurationType="OneShot" DurationMin="0.100000" DurationMax="0.100000"/>
+				<Event Id="1496847411" Name="sfx_player_footstep" ObjectPath="\Events\Default Work Unit\sfx_player\sfx_player_footstep" DurationType="OneShot" DurationMin="0.100000" DurationMax="0.100000"/>
+				<Event Id="284022124" Name="sfx_player_hit" ObjectPath="\Events\Default Work Unit\sfx_player\sfx_player_hit" DurationType="OneShot" DurationMin="0.100000" DurationMax="0.100000"/>
+				<Event Id="2242916472" Name="sfx_potion_spawn" ObjectPath="\Events\Default Work Unit\sfx_items\sfx_potion_spawn" DurationType="OneShot" DurationMin="0.100000" DurationMax="0.100000"/>
+				<Event Id="1347543854" Name="sfx_rake_spawn" ObjectPath="\Events\Default Work Unit\sfx_items\sfx_rake_spawn" DurationType="OneShot" DurationMin="0.100000" DurationMax="0.100000"/>
+				<Event Id="4032417360" Name="sfx_training_dummy_hit" ObjectPath="\Events\Default Work Unit\sfx_player\sfx_training_dummy_hit" DurationType="OneShot" DurationMin="0.100000" DurationMax="0.100000"/>
+				<Event Id="4130196678" Name="sfx_weapon_impact" ObjectPath="\Events\Default Work Unit\sfx_weapon_impact" DurationType="OneShot" DurationMin="0.100000" DurationMax="0.100000"/>
+			</IncludedEvents>
+			<StateGroups>
+				<StateGroup Id="89505537" Name="gameplay" ObjectPath="\States\Default Work Unit\game_state_group\gameplay" GUID="{A61E93EC-CB78-4896-8013-DB8FF4B46B13}">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="1019518653" Name="game_state_group" ObjectPath="\States\Default Work Unit\game_state_group" GUID="{40E855A1-3C21-4091-9922-5BE5A90E219F}">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\game_state_group\None" GUID="{C64B0023-B8DB-4A55-B882-43504F557412}"/>
+						<State Id="89505537" Name="gameplay" ObjectPath="\States\Default Work Unit\game_state_group\gameplay" GUID="{A61E93EC-CB78-4896-8013-DB8FF4B46B13}"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX" Hash="326119593">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

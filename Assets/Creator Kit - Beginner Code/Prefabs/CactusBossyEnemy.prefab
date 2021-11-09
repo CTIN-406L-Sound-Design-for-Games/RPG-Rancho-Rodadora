@@ -89,6 +89,11 @@ MonoBehaviour:
   - {fileID: 8300000, guid: dd476a688160f3443bd22d95179cb003, type: 3}
   - {fileID: 8300000, guid: 93e57f37c3c562345a1d6dea723d4a71, type: 3}
   - {fileID: 8300000, guid: a7473e133f9782b498a577f9b93f7e6f, type: 3}
+  SpottedAudioEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: fa142a39058ba4a2abc5d61229b8dad0,
+      type: 2}
 --- !u!114 &5667712714323555573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -115,6 +120,11 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 52bbf808b3d93fb4f861009f0d06498b, type: 3}
   - {fileID: 8300000, guid: a2b0c466fe3cda84da5a4a1f58ae2f07, type: 3}
   - {fileID: 8300000, guid: a8594e4675d2b1049a71204ba41705d8, type: 3}
+  HitEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 824a6b95835f84aba83bb51397a788e7,
+      type: 2}
 --- !u!114 &1514832715870360197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130,18 +140,38 @@ MonoBehaviour:
   FootstepClips:
   - {fileID: 8300000, guid: ef5caaaf43d61fc439d6a714819a05fe, type: 3}
   - {fileID: 8300000, guid: b8abec50233ac97419381e9459999a9a, type: 3}
+  FootstepEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 76351897151ce4405a080b2e59aec88e,
+      type: 2}
   VocalAttack:
   - {fileID: 8300000, guid: e96f8c1d2460b964d85fd201d9871b02, type: 3}
   - {fileID: 8300000, guid: 0d0ebf1b50554e8449d72cad42070dae, type: 3}
   - {fileID: 8300000, guid: 0d0ebf1b50554e8449d72cad42070dae, type: 3}
+  VocalAttackEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 6341282d2eba543eb85c05091b051578,
+      type: 2}
   VocalHit:
   - {fileID: 8300000, guid: 1000a372c865df245a64a5ad8cfe09f7, type: 3}
   - {fileID: 8300000, guid: d0ed10d2b3380794baa61396a9870a0c, type: 3}
   - {fileID: 8300000, guid: 861e3224eb2444640a456fc774eb104d, type: 3}
   - {fileID: 8300000, guid: 5096df85b9b7d5e4084729db410c043b, type: 3}
+  VocalHitEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 1b70f90c9016d43008dfc9fb5c1ded96,
+      type: 2}
   DeathClips:
   - {fileID: 8300000, guid: ab415396b033067448e7d08899293927, type: 3}
   - {fileID: 8300000, guid: 6989802e6d350bd4882572e8d2f9f24c, type: 3}
+  DeathEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: c000c835f62354d26977e65b1fec221f,
+      type: 2}
   UseType: 1
 --- !u!114 &7104680573333993254
 MonoBehaviour:
@@ -164,10 +194,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5667712714323555575}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 51ed1a96caabdfb43a94013d75c97f28,
+    - target: {fileID: -9029778509527700621, guid: 51ed1a96caabdfb43a94013d75c97f28,
         type: 3}
-      propertyPath: m_Name
-      value: CactusBossy
+      propertyPath: m_Materials.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -9029778509527700621, guid: 51ed1a96caabdfb43a94013d75c97f28,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fde76a69d35a4d24cabd1cecea52cb40, type: 2}
+    - target: {fileID: -9029778509527700621, guid: 51ed1a96caabdfb43a94013d75c97f28,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 9ad4c3bb7eb7de94b8bf8199a2e3f133, type: 2}
+    - target: {fileID: -6057140222963153312, guid: 51ed1a96caabdfb43a94013d75c97f28,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 12cccdbdde79c9f41aed34774772de1c, type: 2}
+    - target: {fileID: -4216859302048453862, guid: 51ed1a96caabdfb43a94013d75c97f28,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 51ed1a96caabdfb43a94013d75c97f28,
         type: 3}
@@ -186,6 +236,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 51ed1a96caabdfb43a94013d75c97f28,
         type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 51ed1a96caabdfb43a94013d75c97f28,
+        type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
@@ -197,16 +252,6 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 51ed1a96caabdfb43a94013d75c97f28,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 51ed1a96caabdfb43a94013d75c97f28,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 51ed1a96caabdfb43a94013d75c97f28,
-        type: 3}
-      propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 51ed1a96caabdfb43a94013d75c97f28,
@@ -224,26 +269,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -6057140222963153312, guid: 51ed1a96caabdfb43a94013d75c97f28,
+    - target: {fileID: -927199367670048503, guid: 51ed1a96caabdfb43a94013d75c97f28,
         type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: 12cccdbdde79c9f41aed34774772de1c, type: 2}
-    - target: {fileID: -9029778509527700621, guid: 51ed1a96caabdfb43a94013d75c97f28,
-        type: 3}
-      propertyPath: m_Materials.Array.size
-      value: 2
+      propertyPath: m_Name
+      value: CactusBossy
       objectReference: {fileID: 0}
-    - target: {fileID: -9029778509527700621, guid: 51ed1a96caabdfb43a94013d75c97f28,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: fde76a69d35a4d24cabd1cecea52cb40, type: 2}
-    - target: {fileID: -9029778509527700621, guid: 51ed1a96caabdfb43a94013d75c97f28,
-        type: 3}
-      propertyPath: m_Materials.Array.data[1]
-      value: 
-      objectReference: {fileID: 2100000, guid: 9ad4c3bb7eb7de94b8bf8199a2e3f133, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 51ed1a96caabdfb43a94013d75c97f28, type: 3}
 --- !u!1 &6117080637132129562 stripped

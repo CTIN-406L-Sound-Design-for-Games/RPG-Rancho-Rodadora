@@ -2386,6 +2386,10 @@ MonoBehaviour:
     - Weight: 50
       Item: {fileID: 11400000, guid: b5d363ebb04c3f942b5500647a0f9301, type: 2}
   SpawnedClip: {fileID: 8300000, guid: dbdd0ed5d7f4cba46a6fda8f74dd5cc9, type: 3}
+  SpawnedEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!114 &70389068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2400,6 +2404,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DestroyedChild: {fileID: 349195861}
   BreakingAudioClip: {fileID: 8300000, guid: 299314922ca5fd748ac9077ae291b758, type: 3}
+  BreakingAudioEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!114 &70389069
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2423,6 +2431,10 @@ MonoBehaviour:
       elementalBoosts: 00000000000000000000000000000000
   StartingWeapon: {fileID: 0}
   HitClip: []
+  HitEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!65 &70389070
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10894,11 +10906,47 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1272648618}
     m_Modifications:
+    - target: {fileID: 1514832715870360197, guid: 12069a4bbbe66284f8a9a22eda310e5e,
+        type: 3}
+      propertyPath: DeathEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: c000c835f62354d26977e65b1fec221f,
+        type: 2}
+    - target: {fileID: 1514832715870360197, guid: 12069a4bbbe66284f8a9a22eda310e5e,
+        type: 3}
+      propertyPath: FootstepEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 76351897151ce4405a080b2e59aec88e,
+        type: 2}
+    - target: {fileID: 1514832715870360197, guid: 12069a4bbbe66284f8a9a22eda310e5e,
+        type: 3}
+      propertyPath: VocalHitEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 1b70f90c9016d43008dfc9fb5c1ded96,
+        type: 2}
+    - target: {fileID: 1514832715870360197, guid: 12069a4bbbe66284f8a9a22eda310e5e,
+        type: 3}
+      propertyPath: VocalAttackEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 6341282d2eba543eb85c05091b051578,
+        type: 2}
     - target: {fileID: 5667712714323555562, guid: 12069a4bbbe66284f8a9a22eda310e5e,
         type: 3}
       propertyPath: m_Name
       value: CactusBossyEnemy (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5667712714323555573, guid: 12069a4bbbe66284f8a9a22eda310e5e,
+        type: 3}
+      propertyPath: HitEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: c84e45eb65d5a4326a58b54be1bce2bf,
+        type: 2}
+    - target: {fileID: 5667712714323555574, guid: 12069a4bbbe66284f8a9a22eda310e5e,
+        type: 3}
+      propertyPath: SpottedAudioEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: fa142a39058ba4a2abc5d61229b8dad0,
+        type: 2}
     - target: {fileID: 5667712714323555575, guid: 12069a4bbbe66284f8a9a22eda310e5e,
         type: 3}
       propertyPath: m_RootOrder
@@ -15577,6 +15625,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Events: []
   SpawnedClip: {fileID: 0}
+  SpawnedEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!114 &415108484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15591,6 +15643,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DestroyedChild: {fileID: 1630750975}
   BreakingAudioClip: {fileID: 8300000, guid: 299314922ca5fd748ac9077ae291b758, type: 3}
+  BreakingAudioEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!114 &415108485
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15614,6 +15670,10 @@ MonoBehaviour:
       elementalBoosts: 00000000000000000000000000000000
   StartingWeapon: {fileID: 0}
   HitClip: []
+  HitEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!65 &415108486
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26517,6 +26577,10 @@ MonoBehaviour:
     - Weight: 40
       Item: {fileID: 11400000, guid: 6a805275c5a3eaf4da6dfc4a97ccf55f, type: 2}
   SpawnedClip: {fileID: 8300000, guid: dbdd0ed5d7f4cba46a6fda8f74dd5cc9, type: 3}
+  SpawnedEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!114 &613455125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26531,6 +26595,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DestroyedChild: {fileID: 367641815}
   BreakingAudioClip: {fileID: 8300000, guid: 299314922ca5fd748ac9077ae291b758, type: 3}
+  BreakingAudioEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!114 &613455126
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26554,6 +26622,10 @@ MonoBehaviour:
       elementalBoosts: 00000000000000000000000000000000
   StartingWeapon: {fileID: 0}
   HitClip: []
+  HitEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!65 &613455127
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26981,6 +27053,89 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 288a42e6b35c81446a49858f8dcaa6cd, type: 3}
+--- !u!1 &628637212
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 628637214}
+  - component: {fileID: 628637213}
+  - component: {fileID: 628637215}
+  m_Layer: 0
+  m_Name: WwiseGlobal
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &628637213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628637212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 483bb1551299640ccbcb1703b6988cfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitializationSettings: {fileID: 11400000, guid: ea18fd733d68443b18f99a93d55c6759,
+    type: 2}
+  basePath: 
+  language: 
+  defaultPoolSize: 0
+  lowerPoolSize: 0
+  streamingPoolSize: 0
+  memoryCutoffThreshold: 0
+  monitorPoolSize: 0
+  monitorQueuePoolSize: 0
+  callbackManagerBufferSize: 0
+  spatialAudioPoolSize: 0
+  maxSoundPropagationDepth: 0
+  engineLogging: 0
+--- !u!4 &628637214
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628637212}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &628637215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628637212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 378bce1ad418e4403bb6c3024ba2c470, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 5c2a3bba8c1b948148c4553112487726,
+      type: 2}
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
 --- !u!1001 &629668093
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33313,6 +33468,10 @@ MonoBehaviour:
       elementalBoosts: 00000000000000000000000000000000
   StartingWeapon: {fileID: 0}
   HitClip: []
+  HitEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!114 &775166170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33327,6 +33486,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DestroyedChild: {fileID: 1875610736}
   BreakingAudioClip: {fileID: 8300000, guid: 299314922ca5fd748ac9077ae291b758, type: 3}
+  BreakingAudioEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!114 &775166171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33350,6 +33513,10 @@ MonoBehaviour:
     - Weight: 100
       Item: {fileID: 11400000, guid: 62615692eb539644ebf9b0d21f4b5d48, type: 2}
   SpawnedClip: {fileID: 8300000, guid: 96d314255593b5c408eba1f353c20fb3, type: 3}
+  SpawnedEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!208 &775166172
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -34497,6 +34664,10 @@ MonoBehaviour:
     - Weight: 50
       Item: {fileID: 11400000, guid: b5d363ebb04c3f942b5500647a0f9301, type: 2}
   SpawnedClip: {fileID: 8300000, guid: dbdd0ed5d7f4cba46a6fda8f74dd5cc9, type: 3}
+  SpawnedEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!114 &806258206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34511,6 +34682,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DestroyedChild: {fileID: 1733918035}
   BreakingAudioClip: {fileID: 8300000, guid: 299314922ca5fd748ac9077ae291b758, type: 3}
+  BreakingAudioEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!114 &806258207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34534,6 +34709,10 @@ MonoBehaviour:
       elementalBoosts: 00000000000000000000000000000000
   StartingWeapon: {fileID: 0}
   HitClip: []
+  HitEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!65 &806258208
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -40617,6 +40796,8 @@ GameObject:
   - component: {fileID: 963194227}
   - component: {fileID: 963194229}
   - component: {fileID: 963194226}
+  - component: {fileID: 963194231}
+  - component: {fileID: 963194230}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -40747,6 +40928,42 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &963194230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9c9525f556ed4e3998ec05211e44a55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDefaultListener: 1
+  listenerId: 0
+--- !u!114 &963194231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4394c2a7502664fc3af09e6faa27e6cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 0
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!4 &963556440 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 4d4ca7ee5f8d07d46b3bf9e68e328526,
@@ -45495,6 +45712,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Events: []
   SpawnedClip: {fileID: 0}
+  SpawnedEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!114 &1055522266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45509,6 +45730,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DestroyedChild: {fileID: 1009715004}
   BreakingAudioClip: {fileID: 8300000, guid: 299314922ca5fd748ac9077ae291b758, type: 3}
+  BreakingAudioEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!114 &1055522267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45532,6 +45757,10 @@ MonoBehaviour:
       elementalBoosts: 00000000000000000000000000000000
   StartingWeapon: {fileID: 0}
   HitClip: []
+  HitEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!65 &1055522268
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -46158,6 +46387,10 @@ MonoBehaviour:
     - Weight: 50
       Item: {fileID: 11400000, guid: b5d363ebb04c3f942b5500647a0f9301, type: 2}
   SpawnedClip: {fileID: 8300000, guid: dbdd0ed5d7f4cba46a6fda8f74dd5cc9, type: 3}
+  SpawnedEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!114 &1059361571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46172,6 +46405,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DestroyedChild: {fileID: 720375490}
   BreakingAudioClip: {fileID: 8300000, guid: 299314922ca5fd748ac9077ae291b758, type: 3}
+  BreakingAudioEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!114 &1059361572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46195,6 +46432,10 @@ MonoBehaviour:
       elementalBoosts: 00000000000000000000000000000000
   StartingWeapon: {fileID: 0}
   HitClip: []
+  HitEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!65 &1059361573
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -49341,7 +49582,11 @@ MonoBehaviour:
   - Entries:
     - Weight: 100
       Item: {fileID: 11400000, guid: b5d363ebb04c3f942b5500647a0f9301, type: 2}
-  SpawnedClip: {fileID: 8300000, guid: e0554fb81bb64c942833ae78f8c873a6, type: 3}
+  SpawnedClip: {fileID: 8300000, guid: dbdd0ed5d7f4cba46a6fda8f74dd5cc9, type: 3}
+  SpawnedEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!114 &1149803694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49356,6 +49601,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DestroyedChild: {fileID: 436458477}
   BreakingAudioClip: {fileID: 8300000, guid: 299314922ca5fd748ac9077ae291b758, type: 3}
+  BreakingAudioEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!114 &1149803695
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49379,6 +49628,10 @@ MonoBehaviour:
       elementalBoosts: 00000000000000000000000000000000
   StartingWeapon: {fileID: 0}
   HitClip: []
+  HitEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!65 &1149803696
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -52015,6 +52268,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Events: []
   SpawnedClip: {fileID: 0}
+  SpawnedEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!114 &1197289734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52029,6 +52286,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DestroyedChild: {fileID: 1190262434}
   BreakingAudioClip: {fileID: 8300000, guid: 299314922ca5fd748ac9077ae291b758, type: 3}
+  BreakingAudioEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!114 &1197289735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52052,6 +52313,10 @@ MonoBehaviour:
       elementalBoosts: 00000000000000000000000000000000
   StartingWeapon: {fileID: 0}
   HitClip: []
+  HitEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!65 &1197289736
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -55530,7 +55795,11 @@ MonoBehaviour:
   - Entries:
     - Weight: 1
       Item: {fileID: 11400000, guid: 4502fd6e5e8fe074a97186a24aa28c3e, type: 2}
-  SpawnedClip: {fileID: 0}
+  SpawnedClip: {fileID: 8300000, guid: dbdd0ed5d7f4cba46a6fda8f74dd5cc9, type: 3}
+  SpawnedEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!4 &1254965976 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 615088111399922472, guid: 076d7f91ec2b4684589a76973d94c978,
@@ -61696,6 +61965,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Events: []
   SpawnedClip: {fileID: 0}
+  SpawnedEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!114 &1395455704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61710,6 +61983,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DestroyedChild: {fileID: 234779779}
   BreakingAudioClip: {fileID: 8300000, guid: 299314922ca5fd748ac9077ae291b758, type: 3}
+  BreakingAudioEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!114 &1395455705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61733,6 +62010,10 @@ MonoBehaviour:
       elementalBoosts: 00000000000000000000000000000000
   StartingWeapon: {fileID: 0}
   HitClip: []
+  HitEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!65 &1395455706
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -63598,6 +63879,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Events: []
   SpawnedClip: {fileID: 0}
+  SpawnedEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!114 &1443302172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63612,6 +63897,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DestroyedChild: {fileID: 502338632}
   BreakingAudioClip: {fileID: 8300000, guid: 299314922ca5fd748ac9077ae291b758, type: 3}
+  BreakingAudioEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!114 &1443302173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63635,6 +63924,10 @@ MonoBehaviour:
       elementalBoosts: 00000000000000000000000000000000
   StartingWeapon: {fileID: 0}
   HitClip: []
+  HitEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!65 &1443302174
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -66383,6 +66676,10 @@ MonoBehaviour:
     - Weight: 80
       Item: {fileID: 11400000, guid: b5d363ebb04c3f942b5500647a0f9301, type: 2}
   SpawnedClip: {fileID: 8300000, guid: dbdd0ed5d7f4cba46a6fda8f74dd5cc9, type: 3}
+  SpawnedEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!114 &1508432495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66397,6 +66694,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DestroyedChild: {fileID: 668614878}
   BreakingAudioClip: {fileID: 8300000, guid: 299314922ca5fd748ac9077ae291b758, type: 3}
+  BreakingAudioEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!114 &1508432496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66420,6 +66721,10 @@ MonoBehaviour:
       elementalBoosts: 00000000000000000000000000000000
   StartingWeapon: {fileID: 0}
   HitClip: []
+  HitEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!65 &1508432497
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -87354,6 +87659,10 @@ MonoBehaviour:
     - Weight: 60
       Item: {fileID: 11400000, guid: 6a805275c5a3eaf4da6dfc4a97ccf55f, type: 2}
   SpawnedClip: {fileID: 8300000, guid: dbdd0ed5d7f4cba46a6fda8f74dd5cc9, type: 3}
+  SpawnedEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!114 &2030677050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87368,6 +87677,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DestroyedChild: {fileID: 1131827012}
   BreakingAudioClip: {fileID: 8300000, guid: 299314922ca5fd748ac9077ae291b758, type: 3}
+  BreakingAudioEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!114 &2030677051
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87391,6 +87704,10 @@ MonoBehaviour:
       elementalBoosts: 00000000000000000000000000000000
   StartingWeapon: {fileID: 0}
   HitClip: []
+  HitEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!65 &2030677052
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -88453,11 +88770,47 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1272648618}
     m_Modifications:
+    - target: {fileID: 1514832715870360197, guid: 12069a4bbbe66284f8a9a22eda310e5e,
+        type: 3}
+      propertyPath: DeathEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: c000c835f62354d26977e65b1fec221f,
+        type: 2}
+    - target: {fileID: 1514832715870360197, guid: 12069a4bbbe66284f8a9a22eda310e5e,
+        type: 3}
+      propertyPath: FootstepEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 76351897151ce4405a080b2e59aec88e,
+        type: 2}
+    - target: {fileID: 1514832715870360197, guid: 12069a4bbbe66284f8a9a22eda310e5e,
+        type: 3}
+      propertyPath: VocalHitEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 1b70f90c9016d43008dfc9fb5c1ded96,
+        type: 2}
+    - target: {fileID: 1514832715870360197, guid: 12069a4bbbe66284f8a9a22eda310e5e,
+        type: 3}
+      propertyPath: VocalAttackEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 6341282d2eba543eb85c05091b051578,
+        type: 2}
     - target: {fileID: 5667712714323555562, guid: 12069a4bbbe66284f8a9a22eda310e5e,
         type: 3}
       propertyPath: m_Name
       value: CactusBossyEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: 5667712714323555573, guid: 12069a4bbbe66284f8a9a22eda310e5e,
+        type: 3}
+      propertyPath: HitEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: c84e45eb65d5a4326a58b54be1bce2bf,
+        type: 2}
+    - target: {fileID: 5667712714323555574, guid: 12069a4bbbe66284f8a9a22eda310e5e,
+        type: 3}
+      propertyPath: SpottedAudioEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: fa142a39058ba4a2abc5d61229b8dad0,
+        type: 2}
     - target: {fileID: 5667712714323555575, guid: 12069a4bbbe66284f8a9a22eda310e5e,
         type: 3}
       propertyPath: m_RootOrder
@@ -92642,6 +92995,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: MikeMoose
       objectReference: {fileID: 0}
+    - target: {fileID: 5549394745342254537, guid: b74b36718b2fa8946a307381a120a835,
+        type: 3}
+      propertyPath: HitEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 33e35ae1d0385459ab56222f1d814351,
+        type: 2}
     - target: {fileID: 5549394745342254539, guid: b74b36718b2fa8946a307381a120a835,
         type: 3}
       propertyPath: m_RootOrder

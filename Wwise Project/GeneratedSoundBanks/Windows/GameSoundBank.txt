@@ -1,0 +1,56 @@
+Event	ID	Name			Wwise Object Path	Notes
+	108203516	sfx_item_use			\Default Work Unit\sfx_items\sfx_item_use	
+	284022124	sfx_player_hit			\Default Work Unit\sfx_player\sfx_player_hit	
+	301602619	sfx_moose_relieved			\Default Work Unit\sfx_moose\sfx_moose_relieved	
+	345945556	sfx_boss_hit			\Default Work Unit\sfx_boss\sfx_boss_hit	
+	527156789	sfx_cactus_vox_attack			\Default Work Unit\sfx_cactus\sfx_cactus_vox_attack	
+	733168346	game_start			\Default Work Unit\game_start	
+	1226390608	sfx_enemy_idle			\Default Work Unit\sfx_enemy\sfx_enemy_idle	
+	1347543854	sfx_rake_spawn			\Default Work Unit\sfx_items\sfx_rake_spawn	
+	1496847411	sfx_player_footstep			\Default Work Unit\sfx_player\sfx_player_footstep	
+	1558985537	sfx_item_equip			\Default Work Unit\sfx_items\sfx_item_equip	
+	1587564420	sfx_boss_spotted			\Default Work Unit\sfx_boss\sfx_boss_spotted	
+	1593364892	sfx_object_spawn			\Default Work Unit\sfx_items\sfx_object_spawn	
+	1603733443	sfx_cactus_death			\Default Work Unit\sfx_cactus\sfx_cactus_death	
+	1756829421	sfx_cactus_idle			\Default Work Unit\sfx_cactus\sfx_cactus_idle	
+	1844429136	sfx_ambience_close			\Default Work Unit\sfx_ambience\sfx_ambience_close	
+	1846524869	sfx_cactus_footstep			\Default Work Unit\sfx_cactus\sfx_cactus_footstep	
+	2035754667	sfx_boss_footstep			\Default Work Unit\sfx_boss\sfx_boss_footstep	
+	2098933247	sfx_ambience_far			\Default Work Unit\sfx_ambience\sfx_ambience_far	
+	2100214689	sfx_moose_footstep			\Default Work Unit\sfx_moose\sfx_moose_footstep	
+	2242916472	sfx_potion_spawn			\Default Work Unit\sfx_items\sfx_potion_spawn	
+	2325714778	sfx_moose_laugh			\Default Work Unit\sfx_moose\sfx_moose_laugh	
+	2344299311	sfx_moose_death			\Default Work Unit\sfx_moose\sfx_moose_death	
+	2747743591	sfx_boss_vox_attack			\Default Work Unit\sfx_boss\sfx_boss_vox_attack	
+	2798893922	sfx_cactus_spotted			\Default Work Unit\sfx_cactus\sfx_cactus_spotted	
+	2841481115	sfx_moose_spur			\Default Work Unit\sfx_moose\sfx_moose_spur	
+	3105589666	sfx_inventory_close			\Default Work Unit\sfx_items\sfx_inventory_close	
+	3160813989	sfx_barrel_break			\Default Work Unit\sfx_items\sfx_barrel_break	
+	3227255030	sfx_inventory_open			\Default Work Unit\sfx_items\sfx_inventory_open	
+	3227268106	sfx_boss_slam			\Default Work Unit\sfx_boss\sfx_boss_slam	
+	3300443410	sfx_cactus_hit			\Default Work Unit\sfx_cactus\sfx_cactus_hit	
+	3453059881	sfx_player_attack			\Default Work Unit\sfx_player\sfx_player_attack	
+	3464347765	sfx_boss_death			\Default Work Unit\sfx_boss\sfx_boss_death	
+	3490519078	sfx_boss_vox_hit			\Default Work Unit\sfx_boss\sfx_boss_vox_hit	
+	3854884700	sfx_moose_vox_hit			\Default Work Unit\sfx_moose\sfx_moose_vox_hit	
+	4032417360	sfx_training_dummy_hit			\Default Work Unit\sfx_player\sfx_training_dummy_hit	
+	4102455534	sfx_moose_surprised			\Default Work Unit\sfx_moose\sfx_moose_surprised	
+	4121100347	sfx_object_pickup			\Default Work Unit\sfx_items\sfx_object_pickup	
+	4130196678	sfx_weapon_impact			\Default Work Unit\sfx_weapon_impact	
+	4146176171	sfx_boss_idle			\Default Work Unit\sfx_boss\sfx_boss_idle	
+	4157505992	sfx_cactus_vox_hit			\Default Work Unit\sfx_cactus\sfx_cactus_vox_hit	
+	4192314393	sfx_moose_vox_attack			\Default Work Unit\sfx_moose\sfx_moose_vox_attack	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	1019518653	game_state_group			\Default Work Unit\game_state_group	
+
+State	ID	Name	State Group			Notes
+	89505537	gameplay	game_state_group			
+	748895195	None	game_state_group			
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	567592333	Wwise Sine	Wwise Sine		\Actor-Mixer Hierarchy\Default Work Unit\beep\Wwise Sine	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	628644712	loop_1	Y:\GoogleDrive\_CloudSync\Work\USC\GIT\RPG-Rancho-Rodadora\Wwise Project\.cache\Windows\SFX\loop_1_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\game_music_switch\level_music\loop_1\loop_1		379912
+

@@ -1,6 +1,594 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" SchemaVersion="103">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="game_start" ID="{AC841ACB-3D3F-4147-BD0C-44F2CE1EA35B}">
+					<ChildrenList>
+						<Action Name="" ID="{2454B403-26C4-4D6B-83A5-916BD0E5917A}" ShortID="102761210">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="game_music_switch" ID="{C67C5B3E-7896-4E13-85E7-80A48E951A07}" WorkUnitID="{3488E31E-B8B3-4479-9545-F2E2B3DF4A54}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{EB830AAE-55B8-4866-B472-70D347AF5428}" ShortID="926340949">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="gameplay" ID="{A61E93EC-CB78-4896-8013-DB8FF4B46B13}" WorkUnitID="{ECEB2C5A-340A-4262-910C-D5AB516DD929}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="sfx_weapon_impact" ID="{966B6390-8096-48E4-88C3-B8884D5B71FE}">
+					<ChildrenList>
+						<Action Name="" ID="{E736664B-A412-418A-B9F5-2141298FCC02}" ShortID="886315397">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="beep" ID="{E55CC1E3-B468-4F4B-9B7F-E8C729B32DB6}" WorkUnitID="{9332E975-D965-445E-8227-3D41CC629B0F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Folder Name="sfx_moose" ID="{4EC6C90C-AAC0-4E47-AF8E-ACE7327264FE}" ShortID="676725274">
+					<ChildrenList>
+						<Event Name="sfx_moose_vox_attack" ID="{28A1E586-4752-470F-8B8D-CA91A7B4CC6D}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{B8536928-6E1C-484A-8BB3-630539378E75}" ShortID="576645505">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="beep" ID="{E55CC1E3-B468-4F4B-9B7F-E8C729B32DB6}" WorkUnitID="{9332E975-D965-445E-8227-3D41CC629B0F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="sfx_moose_death" ID="{51E00809-B763-4242-88F1-6893E50BDBB0}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{509E1709-AEC9-48C4-837A-68698A0AAEC0}" ShortID="244419545">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="beep" ID="{E55CC1E3-B468-4F4B-9B7F-E8C729B32DB6}" WorkUnitID="{9332E975-D965-445E-8227-3D41CC629B0F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="sfx_moose_vox_hit" ID="{8E83D9AF-A06F-4FA9-8517-A53D899FCB1E}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{7C5AE4F8-CD49-4F89-9272-7AC45917715A}" ShortID="749666834">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="beep" ID="{E55CC1E3-B468-4F4B-9B7F-E8C729B32DB6}" WorkUnitID="{9332E975-D965-445E-8227-3D41CC629B0F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="sfx_moose_laugh" ID="{81E32017-FF1F-4319-80FE-FAD3217905F6}">
+							<ChildrenList>
+								<Action Name="" ID="{0A1491F8-1185-47C9-9DDD-3C6E33431082}" ShortID="633796343">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="beep" ID="{E55CC1E3-B468-4F4B-9B7F-E8C729B32DB6}" WorkUnitID="{9332E975-D965-445E-8227-3D41CC629B0F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="sfx_moose_relieved" ID="{EC36C695-84B2-4711-B67F-D5B14E685BB0}">
+							<ChildrenList>
+								<Action Name="" ID="{8BDFFD3C-18CE-45D2-B2D9-8958D6D3C1F4}" ShortID="844779407">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="beep" ID="{E55CC1E3-B468-4F4B-9B7F-E8C729B32DB6}" WorkUnitID="{9332E975-D965-445E-8227-3D41CC629B0F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="sfx_moose_surprised" ID="{7C20DA50-6E75-4AD7-94C4-9375E6BAD3E9}">
+							<ChildrenList>
+								<Action Name="" ID="{5BF0A206-1A08-4AB3-988A-656D5E472422}" ShortID="789253913">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="beep" ID="{E55CC1E3-B468-4F4B-9B7F-E8C729B32DB6}" WorkUnitID="{9332E975-D965-445E-8227-3D41CC629B0F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="sfx_moose_spur" ID="{FAA7A03A-B5C0-430A-B8BD-B7194CFE7E14}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{D5A14879-F08F-4721-A583-BA0466221141}" ShortID="26729468">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="beep" ID="{E55CC1E3-B468-4F4B-9B7F-E8C729B32DB6}" WorkUnitID="{9332E975-D965-445E-8227-3D41CC629B0F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="sfx_moose_footstep" ID="{A6D7CCC0-CB2D-4E31-8E6C-A0289412F066}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{0CF71144-F313-4676-940C-BBD5735A3F46}" ShortID="1050812852">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="beep" ID="{E55CC1E3-B468-4F4B-9B7F-E8C729B32DB6}" WorkUnitID="{9332E975-D965-445E-8227-3D41CC629B0F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="sfx_boss" ID="{6F7F5091-365A-4BA1-A960-5EEBF689EA8B}" ShortID="1040425177">
+					<ChildrenList>
+						<Event Name="sfx_boss_vox_attack" ID="{3B6FFE49-41D0-436F-8F92-E935C297D533}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{2ED9D91A-4C29-4D9A-93E0-9EF4E7565F03}" ShortID="91398792">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="beep" ID="{E55CC1E3-B468-4F4B-9B7F-E8C729B32DB6}" WorkUnitID="{9332E975-D965-445E-8227-3D41CC629B0F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="sfx_boss_death" ID="{638340C5-E8A9-455E-8567-02E05CD005E7}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{64A10317-5CB9-46C7-8623-E3D4B4A290D4}" ShortID="562834665">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="beep" ID="{E55CC1E3-B468-4F4B-9B7F-E8C729B32DB6}" WorkUnitID="{9332E975-D965-445E-8227-3D41CC629B0F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="sfx_boss_footstep" ID="{05684C4D-6553-4969-9817-5F20FAA9C7A4}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{55DB8792-D5CE-4CA8-9E25-04AC17F32459}" ShortID="298006503">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="beep" ID="{E55CC1E3-B468-4F4B-9B7F-E8C729B32DB6}" WorkUnitID="{9332E975-D965-445E-8227-3D41CC629B0F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="sfx_boss_vox_hit" ID="{85FB564C-7F2A-460C-9613-FB685FFDA27D}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{2911CA63-F47D-4026-B388-22C38AA29C7A}" ShortID="131122830">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="beep" ID="{E55CC1E3-B468-4F4B-9B7F-E8C729B32DB6}" WorkUnitID="{9332E975-D965-445E-8227-3D41CC629B0F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="sfx_boss_idle" ID="{B618FF60-C549-4203-A7E2-01AD243C86A6}">
+							<ChildrenList>
+								<Action Name="" ID="{3D7B8F56-0696-4DFA-88C6-1FF31C7AEC68}" ShortID="382229783">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="beep" ID="{E55CC1E3-B468-4F4B-9B7F-E8C729B32DB6}" WorkUnitID="{9332E975-D965-445E-8227-3D41CC629B0F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="sfx_boss_slam" ID="{EB60E3E8-19AB-492E-946F-30B2F212F499}">
+							<ChildrenList>
+								<Action Name="" ID="{7586A287-9943-4401-BC4E-C25B4AD33007}" ShortID="73883765">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="beep" ID="{E55CC1E3-B468-4F4B-9B7F-E8C729B32DB6}" WorkUnitID="{9332E975-D965-445E-8227-3D41CC629B0F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="sfx_boss_spotted" ID="{B446F75F-4AD0-4E51-9629-8B20D0E78527}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{31E4F7A7-152A-4DBD-8344-A27F963E1661}" ShortID="41798747">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="beep" ID="{E55CC1E3-B468-4F4B-9B7F-E8C729B32DB6}" WorkUnitID="{9332E975-D965-445E-8227-3D41CC629B0F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="sfx_boss_hit" ID="{BA333B26-D0FA-43D1-ACFF-966379636E03}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{27462B11-5ABD-4557-BAE3-3E4636E040BF}" ShortID="270464797">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="beep" ID="{E55CC1E3-B468-4F4B-9B7F-E8C729B32DB6}" WorkUnitID="{9332E975-D965-445E-8227-3D41CC629B0F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="sfx_cactus" ID="{3DAEFE4B-0C1A-42E7-89DA-1FA733924409}" ShortID="220361249">
+					<ChildrenList>
+						<Event Name="sfx_cactus_death" ID="{88DCAE72-5388-4852-9E49-8E533BC67175}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{9D9235F8-8FF4-46A7-A3D4-C76FF5DEFD4E}" ShortID="294948907">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="beep" ID="{E55CC1E3-B468-4F4B-9B7F-E8C729B32DB6}" WorkUnitID="{9332E975-D965-445E-8227-3D41CC629B0F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="sfx_cactus_hit" ID="{F8780596-8330-4845-8579-F4B12E128713}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{C9B0518B-E184-4716-B8FC-F986A18BD1DA}" ShortID="247832858">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="beep" ID="{E55CC1E3-B468-4F4B-9B7F-E8C729B32DB6}" WorkUnitID="{9332E975-D965-445E-8227-3D41CC629B0F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="sfx_cactus_idle" ID="{605F7907-884F-444B-B0FF-C2C6783BA045}">
+							<ChildrenList>
+								<Action Name="" ID="{A818C10D-AFE2-4666-9FA3-FEA4D219B27D}" ShortID="151876794">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="beep" ID="{E55CC1E3-B468-4F4B-9B7F-E8C729B32DB6}" WorkUnitID="{9332E975-D965-445E-8227-3D41CC629B0F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="sfx_cactus_spotted" ID="{9F518035-9158-46CC-A448-6EFC5A686F44}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{4113AA71-C129-43DB-A6A2-36CD00D6BE79}" ShortID="108044987">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="beep" ID="{E55CC1E3-B468-4F4B-9B7F-E8C729B32DB6}" WorkUnitID="{9332E975-D965-445E-8227-3D41CC629B0F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="sfx_cactus_footstep" ID="{FBEB33F2-C291-484F-879C-5ECA8B5F26B3}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{C797BFDD-4550-4CCB-98B0-42C42432BC66}" ShortID="540572484">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="beep" ID="{E55CC1E3-B468-4F4B-9B7F-E8C729B32DB6}" WorkUnitID="{9332E975-D965-445E-8227-3D41CC629B0F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="sfx_cactus_vox_attack" ID="{8EC16D71-070C-43E2-8BC8-E7C10F64E248}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{5933B357-515E-4AEB-A00C-948828C9DA00}" ShortID="1067227495">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="beep" ID="{E55CC1E3-B468-4F4B-9B7F-E8C729B32DB6}" WorkUnitID="{9332E975-D965-445E-8227-3D41CC629B0F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="sfx_cactus_vox_hit" ID="{C5E8DABE-6E4F-4183-B6DB-8F7A2D27084E}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{B55B5D5B-998C-4825-9858-275492C306B8}" ShortID="538734008">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="beep" ID="{E55CC1E3-B468-4F4B-9B7F-E8C729B32DB6}" WorkUnitID="{9332E975-D965-445E-8227-3D41CC629B0F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="sfx_enemy" ID="{1638F730-B659-4095-A026-907A5FF4071F}" ShortID="619547126">
+					<ChildrenList>
+						<Event Name="sfx_enemy_idle" ID="{026FA443-E6B3-4FA1-BDB8-6599976BF5B7}">
+							<ChildrenList>
+								<Action Name="" ID="{1990D686-F8DA-4F98-9B1E-07240DE7E784}" ShortID="67836506">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="beep" ID="{E55CC1E3-B468-4F4B-9B7F-E8C729B32DB6}" WorkUnitID="{9332E975-D965-445E-8227-3D41CC629B0F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="sfx_ambience" ID="{E51C30F4-9239-490C-A8D0-2149BF05AA6A}" ShortID="106551822">
+					<ChildrenList>
+						<Event Name="sfx_ambience_close" ID="{2C54184A-0126-48F8-954A-A0CCDA85557B}">
+							<ChildrenList>
+								<Action Name="" ID="{3E2860B1-D233-4B07-BB53-B10B4734C350}" ShortID="47555692">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="beep" ID="{E55CC1E3-B468-4F4B-9B7F-E8C729B32DB6}" WorkUnitID="{9332E975-D965-445E-8227-3D41CC629B0F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="sfx_ambience_far" ID="{82B47DF8-3324-47B0-9DD2-F7500CE63B5B}">
+							<ChildrenList>
+								<Action Name="" ID="{29F4EA84-9A86-4082-869D-72F728086B1E}" ShortID="888837362">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="beep" ID="{E55CC1E3-B468-4F4B-9B7F-E8C729B32DB6}" WorkUnitID="{9332E975-D965-445E-8227-3D41CC629B0F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="sfx_player" ID="{E14EB8C5-90E8-4B35-BF90-42CD0B01EAC7}" ShortID="667466547">
+					<ChildrenList>
+						<Event Name="sfx_player_attack" ID="{EAA0C9A3-9881-4CAD-BDFD-A2FFBEFF70E2}">
+							<ChildrenList>
+								<Action Name="" ID="{54B817AB-9768-45A3-9F51-08A20B4661E7}" ShortID="969526688">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="beep" ID="{E55CC1E3-B468-4F4B-9B7F-E8C729B32DB6}" WorkUnitID="{9332E975-D965-445E-8227-3D41CC629B0F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="sfx_player_footstep" ID="{4434898C-6C5E-4A07-88F4-EDBB18DA390F}">
+							<ChildrenList>
+								<Action Name="" ID="{4AAF4000-B3B6-4D34-9006-1393776E7750}" ShortID="445262462">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="beep" ID="{E55CC1E3-B468-4F4B-9B7F-E8C729B32DB6}" WorkUnitID="{9332E975-D965-445E-8227-3D41CC629B0F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="sfx_player_hit" ID="{DB3691B3-561A-4B57-896A-C4FCD9025F8F}">
+							<ChildrenList>
+								<Action Name="" ID="{7ECC7352-BA92-4F23-B792-60D08324FE50}" ShortID="462072268">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="beep" ID="{E55CC1E3-B468-4F4B-9B7F-E8C729B32DB6}" WorkUnitID="{9332E975-D965-445E-8227-3D41CC629B0F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="sfx_training_dummy_hit" ID="{A806C6CC-4454-4F5C-A296-6267ECB7E566}">
+							<ChildrenList>
+								<Action Name="" ID="{113ED6A8-53EA-4632-8FC9-746EB59EE7F1}" ShortID="763518856">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="beep" ID="{E55CC1E3-B468-4F4B-9B7F-E8C729B32DB6}" WorkUnitID="{9332E975-D965-445E-8227-3D41CC629B0F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="sfx_items" ID="{E6893CB8-D775-42D5-ABE3-6CB0D79DD759}" ShortID="908007759">
+					<ChildrenList>
+						<Event Name="sfx_item_equip" ID="{E2ECE064-E8ED-414A-8B3A-A5E11502DEB9}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{AD3C4ACA-25CA-4678-841C-18DAC2B229C4}" ShortID="583839318">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="beep" ID="{E55CC1E3-B468-4F4B-9B7F-E8C729B32DB6}" WorkUnitID="{9332E975-D965-445E-8227-3D41CC629B0F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="sfx_object_spawn" ID="{609A193F-6AB8-4451-9B60-8442A7C939E9}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{5AECE97F-0930-448C-A195-B9BC64F8BD90}" ShortID="424466426">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="beep" ID="{E55CC1E3-B468-4F4B-9B7F-E8C729B32DB6}" WorkUnitID="{9332E975-D965-445E-8227-3D41CC629B0F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="sfx_potion_spawn" ID="{D0CE1FE9-12EE-427E-B641-29D6CFAFBB65}">
+							<ChildrenList>
+								<Action Name="" ID="{FA1C6B01-6FE3-425E-876E-764EEA64E41D}" ShortID="1050303087">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="beep" ID="{E55CC1E3-B468-4F4B-9B7F-E8C729B32DB6}" WorkUnitID="{9332E975-D965-445E-8227-3D41CC629B0F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="sfx_object_pickup" ID="{3F36D1F6-79A4-45B1-B0E8-CDB77E63B7E6}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{AC2299A2-02A9-49C6-9DAA-0B3DFDDED256}" ShortID="674857824">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="beep" ID="{E55CC1E3-B468-4F4B-9B7F-E8C729B32DB6}" WorkUnitID="{9332E975-D965-445E-8227-3D41CC629B0F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="sfx_item_use" ID="{009D6503-F67E-4A12-BE2A-74A77D6A2FB4}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{15C3255B-BFBC-4159-86C9-8BCE86D085F4}" ShortID="341061526">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="beep" ID="{E55CC1E3-B468-4F4B-9B7F-E8C729B32DB6}" WorkUnitID="{9332E975-D965-445E-8227-3D41CC629B0F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="sfx_rake_spawn" ID="{08D130BB-C62C-4CE7-B8F9-85A03257CC90}">
+							<ChildrenList>
+								<Action Name="" ID="{BFCC6E90-0043-4BF9-B1CF-EC84D13F2A89}" ShortID="985092036">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="beep" ID="{E55CC1E3-B468-4F4B-9B7F-E8C729B32DB6}" WorkUnitID="{9332E975-D965-445E-8227-3D41CC629B0F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="sfx_inventory_open" ID="{E4BC6F1B-394E-43FF-97E0-1DC32486D610}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{27E5371B-AC23-46E9-95FD-78D515D64D7C}" ShortID="93944826">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="beep" ID="{E55CC1E3-B468-4F4B-9B7F-E8C729B32DB6}" WorkUnitID="{9332E975-D965-445E-8227-3D41CC629B0F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="sfx_inventory_close" ID="{90CBB84F-69CE-42F6-84BD-2AAD492D96FF}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{61BD378E-CBED-4D59-BB39-21C5D0395879}" ShortID="214228644">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="beep" ID="{E55CC1E3-B468-4F4B-9B7F-E8C729B32DB6}" WorkUnitID="{9332E975-D965-445E-8227-3D41CC629B0F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="sfx_barrel_break" ID="{55E63653-B9E8-4153-A337-9BCE60CCAA57}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{4E2B97F4-EF5A-4418-92E6-F6B60E9184C8}" ShortID="405649454">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="beep" ID="{E55CC1E3-B468-4F4B-9B7F-E8C729B32DB6}" WorkUnitID="{9332E975-D965-445E-8227-3D41CC629B0F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

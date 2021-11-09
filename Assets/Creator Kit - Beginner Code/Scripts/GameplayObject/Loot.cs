@@ -6,7 +6,7 @@ using CreatorKitCodeInternal;
 using UnityEngine;
 using UnityEngine.AI;
 
-namespace CreatorKitCode 
+namespace CreatorKitCode
 {
     /// <summary>
     /// Describes an InteractableObject that can be picked up and grants a specific item when interacted with.
@@ -28,7 +28,7 @@ namespace CreatorKitCode
         Vector3 m_TargetPoint;
         float m_AnimationTimer = 0.0f;
 
-    
+
         void Awake()
         {
             m_OriginalPosition = transform.position;
@@ -39,7 +39,7 @@ namespace CreatorKitCode
         protected override void Start()
         {
             base.Start();
-        
+
             CreateWorldRepresentation();
         }
 
@@ -53,7 +53,7 @@ namespace CreatorKitCode
 
                 Vector3 currentPos = Vector3.Lerp(m_OriginalPosition, m_TargetPoint, ratio);
                 currentPos.y = currentPos.y + Mathf.Sin(ratio * Mathf.PI) * 2.0f;
-            
+
                 transform.position = currentPos;
 
                 if (m_AnimationTimer >= AnimationTime)
@@ -61,15 +61,17 @@ namespace CreatorKitCode
                     LootUI.Instance.NewLoot(this);
                 }
             }
-        
+
             Debug.DrawLine(m_TargetPoint, m_TargetPoint + Vector3.up, Color.magenta);
         }
 
         public override void InteractWith(CharacterData target)
         {
             target.Inventory.AddItem(Item);
-            SFXManager.PlaySound(SFXManager.Use.Sound2D, new SFXManager.PlayData(){Clip = SFXManager.PickupSound});
-        
+            SFXManager.PlaySound(SFXManager.Use.Sound2D, new SFXManager.PlayData() { Clip = SFXManager.PickupSound });
+
+            AkSoundEngine.PostEvent("sfx_object_pickup", GameObject.Find("WwiseGlobal"));
+
             UISystem.Instance.InventoryWindow.Load(target);
             Destroy(gameObject);
         }
@@ -83,7 +85,7 @@ namespace CreatorKitCode
         {
             m_OriginalPosition = position;
             transform.position = position;
-        
+
             Vector3 targetPos;
             if (!RandomPoint(transform.position, 2.0f, out targetPos))
                 targetPos = transform.position;
@@ -93,7 +95,7 @@ namespace CreatorKitCode
 
             gameObject.layer = LayerMask.NameToLayer("Interactable");
         }
-    
+
         bool RandomPoint(Vector3 center, float range, out Vector3 result)
         {
             for (int i = 0; i < 30; i++)
@@ -135,10 +137,10 @@ namespace CreatorKitCode
                 float scale = Item.ItemSprite.pixelsPerUnit / maxSize;
 
                 billboard.transform.localScale = scale * Vector3.one * 0.5f;
-            
-                        
+
+
                 var bc = billboard.AddComponent<BoxCollider>();
-                bc.size = new Vector3(0.5f, 0.5f, 0.5f) * (1.0f/scale);
+                bc.size = new Vector3(0.5f, 0.5f, 0.5f) * (1.0f / scale);
             }
         }
     }

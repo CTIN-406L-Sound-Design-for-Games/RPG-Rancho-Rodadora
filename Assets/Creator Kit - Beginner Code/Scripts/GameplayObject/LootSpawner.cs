@@ -8,7 +8,7 @@ using Random = UnityEngine.Random;
 using UnityEditor;
 #endif
 
-namespace CreatorKitCode 
+namespace CreatorKitCode
 {
     /// <summary>
     /// This class handle creating loot. It got a list of events and each events have a list of items with associated
@@ -22,7 +22,7 @@ namespace CreatorKitCode
         {
             public LootEntry[] Entries;
         }
-    
+
         [System.Serializable]
         public class LootEntry
         {
@@ -35,10 +35,12 @@ namespace CreatorKitCode
             public LootEntry Entry;
             public float Percentage;
         }
-    
+
         public SpawnEvent[] Events;
         public AudioClip SpawnedClip;
-    
+
+        public AK.Wwise.Event SpawnedEvent;
+
         /// <summary>
         /// Call this to trigger the spawning of the loot. Will spawn one item per event, picking the item randomly
         /// per event using the defined weight. Every call will pick randomly again (but most of the time, the caller
@@ -47,12 +49,18 @@ namespace CreatorKitCode
         public void SpawnLoot()
         {
             Vector3 position = transform.position;
-            SFXManager.PlaySound(SFXManager.Use.WorldSound, new SFXManager.PlayData()
+            if (SpawnedClip != null)
             {
-                Clip = SpawnedClip,
-                Position = position
-            });
-        
+                SFXManager.PlaySound(SFXManager.Use.WorldSound, new SFXManager.PlayData()
+                {
+                    Clip = SpawnedClip,
+                    Position = position
+                });
+
+                AkSoundEngine.PostEvent("sfx_object_spawn", this.gameObject);
+            }
+
+
             //we go over all the events.
             for (int i = 0; i < Events.Length; ++i)
             {
@@ -80,10 +88,10 @@ namespace CreatorKitCode
                     percentageEntry.Percentage = previousPercent + percent;
 
                     previousPercent = percentageEntry.Percentage;
-                
+
                     lookupTable.Add(percentageEntry);
                 }
-            
+
                 float rng = Random.value;
                 for (int k = 0; k < lookupTable.Count; ++k)
                 {
@@ -93,9 +101,9 @@ namespace CreatorKitCode
                         //GameObject obj = Instantiate(lookupTable[k].Entry.Item.WorldObjectPrefab);
                         var l = obj.AddComponent<Loot>();
                         l.Item = lookupTable[k].Entry.Item;
-                    
+
                         l.Spawn(position);
-                    
+
                         break;
                     }
                 }
@@ -110,7 +118,7 @@ public class LootSpawnerEditor : Editor
 {
     SerializedProperty m_SpawnSoundProp;
     SerializedProperty m_SpawnEventProp;
-    
+
     bool[] m_FoldoutInfos;
 
     int toDelete = -1;
@@ -119,7 +127,7 @@ public class LootSpawnerEditor : Editor
     {
         m_SpawnSoundProp = serializedObject.FindProperty("SpawnedClip");
         m_SpawnEventProp = serializedObject.FindProperty("Events");
-        
+
         m_FoldoutInfos = new bool[m_SpawnEventProp.arraySize];
 
         Undo.undoRedoPerformed += RecomputeFoldout;
@@ -155,7 +163,7 @@ public class LootSpawnerEditor : Editor
                 var entriesArrayProp = m_SpawnEventProp.GetArrayElementAtIndex(i).FindPropertyRelative("Entries");
 
                 int localToDelete = -1;
-                
+
                 EditorGUILayout.BeginHorizontal();
                 GUILayout.Label("Item");
                 GUILayout.Label("Weight");
@@ -189,7 +197,7 @@ public class LootSpawnerEditor : Editor
                     entriesArrayProp.InsertArrayElementAtIndex(entriesArrayProp.arraySize);
                 }
             }
-            
+
             EditorGUILayout.EndFoldoutHeaderGroup();
         }
 
@@ -217,11 +225,11 @@ public class LootSpawnerEditor : Editor
 
         serializedObject.ApplyModifiedProperties();
     }
-    
+
     void ShowHeaderContextMenu(Rect position, int index)
     {
         var menu = new GenericMenu();
-        menu.AddItem(new GUIContent("Remove"), false, () => { toDelete = index;});
+        menu.AddItem(new GUIContent("Remove"), false, () => { toDelete = index; });
         menu.DropDown(position);
     }
 }
