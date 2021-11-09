@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace CreatorKitCodeInternal 
+namespace CreatorKitCodeInternal
 {
     public class AmbiencePlayer : MonoBehaviour
     {
         static AmbiencePlayer s_Instance;
-    
+
         public AudioSource FarAudioSource;
         public AudioSource CloseAudioSource;
 
@@ -20,6 +20,8 @@ namespace CreatorKitCodeInternal
         {
             s_Instance.CloseAudioSource.volume = 1.0f - zoomRatio;
             s_Instance.FarAudioSource.volume = zoomRatio;
+            AkSoundEngine.SetRTPCValue("zoomRatio", zoomRatio, GameObject.Find("WwiseGlobal"));
+            //Debug.Log("zoomRatio: " + zoomRatio);
         }
     }
 }

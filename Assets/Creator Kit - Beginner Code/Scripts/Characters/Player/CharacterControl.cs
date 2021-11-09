@@ -158,6 +158,9 @@ namespace CreatorKitCodeInternal
             //Another method would be to add a callback in the CharacterData that get called
             //when health reach 0, and this class register to the callback in Start
             //(see CharacterData.OnDamage for an example)
+
+            AkSoundEngine.SetRTPCValue("playerHealth", m_CharacterData.Stats.CurrentHealth, GameObject.Find("WwiseGlobal"));
+
             if (m_CharacterData.Stats.CurrentHealth == 0)
             {
                 m_Animator.SetTrigger(m_FaintParamID);

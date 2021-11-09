@@ -16,6 +16,7 @@
 						<ObjectRef Name="sfx_moose_spur" ID="{FAA7A03A-B5C0-430A-B8BD-B7194CFE7E14}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="sfx_moose_laugh" ID="{81E32017-FF1F-4319-80FE-FAD3217905F6}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="sfx_boss_vox_attack" ID="{3B6FFE49-41D0-436F-8F92-E935C297D533}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_boss_hit" ID="{BA333B26-D0FA-43D1-ACFF-966379636E03}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="sfx_cactus_vox_attack" ID="{8EC16D71-070C-43E2-8BC8-E7C10F64E248}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="sfx_inventory_open" ID="{E4BC6F1B-394E-43FF-97E0-1DC32486D610}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="sfx_cactus_idle" ID="{605F7907-884F-444B-B0FF-C2C6783BA045}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
@@ -42,6 +43,7 @@
 						<ObjectRef Name="sfx_rake_spawn" ID="{08D130BB-C62C-4CE7-B8F9-85A03257CC90}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="sfx_moose_footstep" ID="{A6D7CCC0-CB2D-4E31-8E6C-A0289412F066}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="sfx_boss_spotted" ID="{B446F75F-4AD0-4E51-9629-8B20D0E78527}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_training_dummy_hit" ID="{A806C6CC-4454-4F5C-A296-6267ECB7E566}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="sfx_enemy_idle" ID="{026FA443-E6B3-4FA1-BDB8-6599976BF5B7}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="sfx_moose_vox_hit" ID="{8E83D9AF-A06F-4FA9-8517-A53D899FCB1E}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>

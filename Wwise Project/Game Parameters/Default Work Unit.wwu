@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{5FF11EB7-BF51-48C4-B1DC-AA7BC95D7D99}" SchemaVersion="103">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{5FF11EB7-BF51-48C4-B1DC-AA7BC95D7D99}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{5FF11EB7-BF51-48C4-B1DC-AA7BC95D7D99}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="zoomRatio" ID="{34B6BE30-1E64-42B1-9056-879C2A800B67}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="1"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="playerHealth" ID="{4B5CF15C-39A1-4421-9FEF-486CE5BFD163}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="20"/>
+						<Property Name="Max" Type="Real64" Value="30"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>
