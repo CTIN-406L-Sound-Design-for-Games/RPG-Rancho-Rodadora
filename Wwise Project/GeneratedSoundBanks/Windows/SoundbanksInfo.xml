@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="460270446" Language="SFX" Hash="1491322418">
+		<SoundBank Id="460270446" Language="SFX" Hash="4272700445">
 			<ObjectPath>\SoundBanks\Default Work Unit\GameSoundBank</ObjectPath>
 			<ShortName>GameSoundBank</ShortName>
 			<Path>GameSoundBank.bnk</Path>
@@ -37,6 +37,7 @@
 				<Event Id="1844429136" Name="sfx_ambience_close" ObjectPath="\Events\Default Work Unit\sfx_ambience\sfx_ambience_close" DurationType="OneShot" DurationMin="0.100000" DurationMax="0.100000"/>
 				<Event Id="2098933247" Name="sfx_ambience_far" ObjectPath="\Events\Default Work Unit\sfx_ambience\sfx_ambience_far" DurationType="OneShot" DurationMin="0.100000" DurationMax="0.100000"/>
 				<Event Id="3160813989" Name="sfx_barrel_break" ObjectPath="\Events\Default Work Unit\sfx_items\sfx_barrel_break" DurationType="OneShot" DurationMin="0.100000" DurationMax="0.100000"/>
+				<Event Id="664197207" Name="sfx_barrel_hit" ObjectPath="\Events\Default Work Unit\sfx_items\sfx_barrel_hit" DurationType="OneShot" DurationMin="0.100000" DurationMax="0.100000"/>
 				<Event Id="3464347765" Name="sfx_boss_death" ObjectPath="\Events\Default Work Unit\sfx_boss\sfx_boss_death" DurationType="OneShot" DurationMin="0.100000" DurationMax="0.100000"/>
 				<Event Id="2035754667" Name="sfx_boss_footstep" ObjectPath="\Events\Default Work Unit\sfx_boss\sfx_boss_footstep" DurationType="OneShot" DurationMin="0.100000" DurationMax="0.100000"/>
 				<Event Id="345945556" Name="sfx_boss_hit" ObjectPath="\Events\Default Work Unit\sfx_boss\sfx_boss_hit" DurationType="OneShot" DurationMin="0.100000" DurationMax="0.100000"/>
@@ -87,7 +88,7 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="4190814903">
+		<SoundBank Id="1355168291" Language="SFX" Hash="349946091">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>

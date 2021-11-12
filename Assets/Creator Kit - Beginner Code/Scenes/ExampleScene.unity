@@ -2407,7 +2407,8 @@ MonoBehaviour:
   BreakingAudioEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: c9bb25d2a10eb4f0180e32cfa08dfef1,
+      type: 2}
 --- !u!114 &70389069
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2434,7 +2435,8 @@ MonoBehaviour:
   HitEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: de473eef450114f439ee09c1afadec12,
+      type: 2}
 --- !u!65 &70389070
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10906,47 +10908,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1272648618}
     m_Modifications:
-    - target: {fileID: 1514832715870360197, guid: 12069a4bbbe66284f8a9a22eda310e5e,
-        type: 3}
-      propertyPath: DeathEvent.WwiseObjectReference
-      value: 
-      objectReference: {fileID: 11400000, guid: c000c835f62354d26977e65b1fec221f,
-        type: 2}
-    - target: {fileID: 1514832715870360197, guid: 12069a4bbbe66284f8a9a22eda310e5e,
-        type: 3}
-      propertyPath: FootstepEvent.WwiseObjectReference
-      value: 
-      objectReference: {fileID: 11400000, guid: 76351897151ce4405a080b2e59aec88e,
-        type: 2}
-    - target: {fileID: 1514832715870360197, guid: 12069a4bbbe66284f8a9a22eda310e5e,
-        type: 3}
-      propertyPath: VocalHitEvent.WwiseObjectReference
-      value: 
-      objectReference: {fileID: 11400000, guid: 1b70f90c9016d43008dfc9fb5c1ded96,
-        type: 2}
-    - target: {fileID: 1514832715870360197, guid: 12069a4bbbe66284f8a9a22eda310e5e,
-        type: 3}
-      propertyPath: VocalAttackEvent.WwiseObjectReference
-      value: 
-      objectReference: {fileID: 11400000, guid: 6341282d2eba543eb85c05091b051578,
-        type: 2}
     - target: {fileID: 5667712714323555562, guid: 12069a4bbbe66284f8a9a22eda310e5e,
         type: 3}
       propertyPath: m_Name
       value: CactusBossyEnemy (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 5667712714323555573, guid: 12069a4bbbe66284f8a9a22eda310e5e,
-        type: 3}
-      propertyPath: HitEvent.WwiseObjectReference
-      value: 
-      objectReference: {fileID: 11400000, guid: c84e45eb65d5a4326a58b54be1bce2bf,
-        type: 2}
-    - target: {fileID: 5667712714323555574, guid: 12069a4bbbe66284f8a9a22eda310e5e,
-        type: 3}
-      propertyPath: SpottedAudioEvent.WwiseObjectReference
-      value: 
-      objectReference: {fileID: 11400000, guid: fa142a39058ba4a2abc5d61229b8dad0,
-        type: 2}
     - target: {fileID: 5667712714323555575, guid: 12069a4bbbe66284f8a9a22eda310e5e,
         type: 3}
       propertyPath: m_RootOrder
@@ -15646,7 +15612,8 @@ MonoBehaviour:
   BreakingAudioEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: c9bb25d2a10eb4f0180e32cfa08dfef1,
+      type: 2}
 --- !u!114 &415108485
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15673,7 +15640,8 @@ MonoBehaviour:
   HitEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: de473eef450114f439ee09c1afadec12,
+      type: 2}
 --- !u!65 &415108486
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26598,7 +26566,8 @@ MonoBehaviour:
   BreakingAudioEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: c9bb25d2a10eb4f0180e32cfa08dfef1,
+      type: 2}
 --- !u!114 &613455126
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26625,7 +26594,8 @@ MonoBehaviour:
   HitEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: de473eef450114f439ee09c1afadec12,
+      type: 2}
 --- !u!65 &613455127
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33471,7 +33441,8 @@ MonoBehaviour:
   HitEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: de473eef450114f439ee09c1afadec12,
+      type: 2}
 --- !u!114 &775166170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33489,7 +33460,8 @@ MonoBehaviour:
   BreakingAudioEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: c9bb25d2a10eb4f0180e32cfa08dfef1,
+      type: 2}
 --- !u!114 &775166171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34685,7 +34657,8 @@ MonoBehaviour:
   BreakingAudioEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: c9bb25d2a10eb4f0180e32cfa08dfef1,
+      type: 2}
 --- !u!114 &806258207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34712,7 +34685,8 @@ MonoBehaviour:
   HitEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: de473eef450114f439ee09c1afadec12,
+      type: 2}
 --- !u!65 &806258208
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -45733,7 +45707,8 @@ MonoBehaviour:
   BreakingAudioEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: c9bb25d2a10eb4f0180e32cfa08dfef1,
+      type: 2}
 --- !u!114 &1055522267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45760,7 +45735,8 @@ MonoBehaviour:
   HitEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: de473eef450114f439ee09c1afadec12,
+      type: 2}
 --- !u!65 &1055522268
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -46408,7 +46384,8 @@ MonoBehaviour:
   BreakingAudioEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: c9bb25d2a10eb4f0180e32cfa08dfef1,
+      type: 2}
 --- !u!114 &1059361572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46435,7 +46412,8 @@ MonoBehaviour:
   HitEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: de473eef450114f439ee09c1afadec12,
+      type: 2}
 --- !u!65 &1059361573
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -49604,7 +49582,8 @@ MonoBehaviour:
   BreakingAudioEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: c9bb25d2a10eb4f0180e32cfa08dfef1,
+      type: 2}
 --- !u!114 &1149803695
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49631,7 +49610,8 @@ MonoBehaviour:
   HitEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: de473eef450114f439ee09c1afadec12,
+      type: 2}
 --- !u!65 &1149803696
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -52289,7 +52269,8 @@ MonoBehaviour:
   BreakingAudioEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: c9bb25d2a10eb4f0180e32cfa08dfef1,
+      type: 2}
 --- !u!114 &1197289735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52316,7 +52297,8 @@ MonoBehaviour:
   HitEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: de473eef450114f439ee09c1afadec12,
+      type: 2}
 --- !u!65 &1197289736
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -61986,7 +61968,8 @@ MonoBehaviour:
   BreakingAudioEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: c9bb25d2a10eb4f0180e32cfa08dfef1,
+      type: 2}
 --- !u!114 &1395455705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62013,7 +61996,8 @@ MonoBehaviour:
   HitEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: de473eef450114f439ee09c1afadec12,
+      type: 2}
 --- !u!65 &1395455706
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -63900,7 +63884,8 @@ MonoBehaviour:
   BreakingAudioEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: c9bb25d2a10eb4f0180e32cfa08dfef1,
+      type: 2}
 --- !u!114 &1443302173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63927,7 +63912,8 @@ MonoBehaviour:
   HitEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: de473eef450114f439ee09c1afadec12,
+      type: 2}
 --- !u!65 &1443302174
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -66697,7 +66683,8 @@ MonoBehaviour:
   BreakingAudioEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: c9bb25d2a10eb4f0180e32cfa08dfef1,
+      type: 2}
 --- !u!114 &1508432496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66724,7 +66711,8 @@ MonoBehaviour:
   HitEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: de473eef450114f439ee09c1afadec12,
+      type: 2}
 --- !u!65 &1508432497
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -87680,7 +87668,8 @@ MonoBehaviour:
   BreakingAudioEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: c9bb25d2a10eb4f0180e32cfa08dfef1,
+      type: 2}
 --- !u!114 &2030677051
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87707,7 +87696,8 @@ MonoBehaviour:
   HitEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: de473eef450114f439ee09c1afadec12,
+      type: 2}
 --- !u!65 &2030677052
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -88770,47 +88760,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1272648618}
     m_Modifications:
-    - target: {fileID: 1514832715870360197, guid: 12069a4bbbe66284f8a9a22eda310e5e,
-        type: 3}
-      propertyPath: DeathEvent.WwiseObjectReference
-      value: 
-      objectReference: {fileID: 11400000, guid: c000c835f62354d26977e65b1fec221f,
-        type: 2}
-    - target: {fileID: 1514832715870360197, guid: 12069a4bbbe66284f8a9a22eda310e5e,
-        type: 3}
-      propertyPath: FootstepEvent.WwiseObjectReference
-      value: 
-      objectReference: {fileID: 11400000, guid: 76351897151ce4405a080b2e59aec88e,
-        type: 2}
-    - target: {fileID: 1514832715870360197, guid: 12069a4bbbe66284f8a9a22eda310e5e,
-        type: 3}
-      propertyPath: VocalHitEvent.WwiseObjectReference
-      value: 
-      objectReference: {fileID: 11400000, guid: 1b70f90c9016d43008dfc9fb5c1ded96,
-        type: 2}
-    - target: {fileID: 1514832715870360197, guid: 12069a4bbbe66284f8a9a22eda310e5e,
-        type: 3}
-      propertyPath: VocalAttackEvent.WwiseObjectReference
-      value: 
-      objectReference: {fileID: 11400000, guid: 6341282d2eba543eb85c05091b051578,
-        type: 2}
     - target: {fileID: 5667712714323555562, guid: 12069a4bbbe66284f8a9a22eda310e5e,
         type: 3}
       propertyPath: m_Name
       value: CactusBossyEnemy
       objectReference: {fileID: 0}
-    - target: {fileID: 5667712714323555573, guid: 12069a4bbbe66284f8a9a22eda310e5e,
-        type: 3}
-      propertyPath: HitEvent.WwiseObjectReference
-      value: 
-      objectReference: {fileID: 11400000, guid: c84e45eb65d5a4326a58b54be1bce2bf,
-        type: 2}
-    - target: {fileID: 5667712714323555574, guid: 12069a4bbbe66284f8a9a22eda310e5e,
-        type: 3}
-      propertyPath: SpottedAudioEvent.WwiseObjectReference
-      value: 
-      objectReference: {fileID: 11400000, guid: fa142a39058ba4a2abc5d61229b8dad0,
-        type: 2}
     - target: {fileID: 5667712714323555575, guid: 12069a4bbbe66284f8a9a22eda310e5e,
         type: 3}
       propertyPath: m_RootOrder
@@ -92663,6 +92617,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1419090759}
     m_Modifications:
+    - target: {fileID: 1772072466692217461, guid: 71b556186b3138941be7007554e6e064,
+        type: 3}
+      propertyPath: HitEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: a4fca447ab9f24469910c7ad9ae2b43a,
+        type: 2}
     - target: {fileID: 6768099124708979053, guid: 71b556186b3138941be7007554e6e064,
         type: 3}
       propertyPath: m_RootOrder
@@ -92995,11 +92955,35 @@ PrefabInstance:
       propertyPath: m_Name
       value: MikeMoose
       objectReference: {fileID: 0}
+    - target: {fileID: 5305352181106717466, guid: b74b36718b2fa8946a307381a120a835,
+        type: 3}
+      propertyPath: DeathEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 91ccb2090d0984d51916351dc9eed6d1,
+        type: 2}
+    - target: {fileID: 5305352181106717466, guid: b74b36718b2fa8946a307381a120a835,
+        type: 3}
+      propertyPath: FootstepEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 90a008333bf1f457283716ea7a78056a,
+        type: 2}
+    - target: {fileID: 5305352181106717466, guid: b74b36718b2fa8946a307381a120a835,
+        type: 3}
+      propertyPath: VocalHitEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 33e35ae1d0385459ab56222f1d814351,
+        type: 2}
+    - target: {fileID: 5305352181106717466, guid: b74b36718b2fa8946a307381a120a835,
+        type: 3}
+      propertyPath: VocalAttackEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 33ede1178239b419bbd171392630bbc9,
+        type: 2}
     - target: {fileID: 5549394745342254537, guid: b74b36718b2fa8946a307381a120a835,
         type: 3}
       propertyPath: HitEvent.WwiseObjectReference
       value: 
-      objectReference: {fileID: 11400000, guid: 33e35ae1d0385459ab56222f1d814351,
+      objectReference: {fileID: 11400000, guid: 1656afbed7d6444b4b78400aac76056c,
         type: 2}
     - target: {fileID: 5549394745342254539, guid: b74b36718b2fa8946a307381a120a835,
         type: 3}
@@ -93056,6 +93040,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5549394745342254541, guid: b74b36718b2fa8946a307381a120a835,
+        type: 3}
+      propertyPath: SpurSoundEvent.WwiseObjectReference
+      value: 
+      objectReference: {fileID: 11400000, guid: 1af02702be28a4f2d95673a33676efa0,
+        type: 2}
     - target: {fileID: 5549394745342254542, guid: b74b36718b2fa8946a307381a120a835,
         type: 3}
       propertyPath: m_StoppingDistance

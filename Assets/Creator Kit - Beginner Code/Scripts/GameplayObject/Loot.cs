@@ -71,6 +71,7 @@ namespace CreatorKitCode
             SFXManager.PlaySound(SFXManager.Use.Sound2D, new SFXManager.PlayData() { Clip = SFXManager.PickupSound });
 
             AkSoundEngine.PostEvent("sfx_object_pickup", GameObject.Find("WwiseGlobal"));
+            Debug.Log("sfx_object_pickup");
 
             UISystem.Instance.InventoryWindow.Load(target);
             Destroy(gameObject);

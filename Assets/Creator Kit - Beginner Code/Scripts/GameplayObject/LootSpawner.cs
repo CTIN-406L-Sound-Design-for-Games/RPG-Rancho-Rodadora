@@ -58,6 +58,7 @@ namespace CreatorKitCode
                 });
 
                 AkSoundEngine.PostEvent("sfx_object_spawn", this.gameObject);
+                Debug.Log("sfx_object_spawn");
             }
 
 

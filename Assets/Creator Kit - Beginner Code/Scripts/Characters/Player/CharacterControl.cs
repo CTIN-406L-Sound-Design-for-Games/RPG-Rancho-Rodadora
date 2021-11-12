@@ -415,7 +415,15 @@ namespace CreatorKitCodeInternal
 
                 var attackPos = m_CurrentTargetCharacterData.transform.position + transform.up * 0.5f;
                 VFXManager.PlayVFX(VFXType.Hit, attackPos);
-                SFXManager.PlaySound(m_CharacterAudio.UseType, new SFXManager.PlayData() { Clip = m_CharacterData.Equipment.Weapon.GetHitSound(), PitchMin = 0.8f, PitchMax = 1.2f, Position = attackPos });
+                SFXManager.PlaySound(m_CharacterAudio.UseType, new SFXManager.PlayData()
+                {
+                    Clip = m_CharacterData.Equipment.Weapon.GetHitSound(),
+                    PitchMin = 0.8f,
+                    PitchMax = 1.2f,
+                    Position = attackPos
+                });
+
+
 
                 // Player,
                 // Enemies,

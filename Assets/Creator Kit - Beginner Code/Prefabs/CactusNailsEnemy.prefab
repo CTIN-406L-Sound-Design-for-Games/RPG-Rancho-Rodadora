@@ -136,7 +136,7 @@ MonoBehaviour:
   HitEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: c84e45eb65d5a4326a58b54be1bce2bf,
+    WwiseObjectReference: {fileID: 11400000, guid: 420795abbc5ed45eeb49478c2ed9c609,
       type: 2}
 --- !u!114 &1514832715870360197
 MonoBehaviour:

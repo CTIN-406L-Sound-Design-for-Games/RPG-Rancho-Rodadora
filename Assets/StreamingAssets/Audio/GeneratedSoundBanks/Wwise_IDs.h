@@ -17,6 +17,7 @@ namespace AK
         static const AkUniqueID SFX_AMBIENCE_CLOSE = 1844429136U;
         static const AkUniqueID SFX_AMBIENCE_FAR = 2098933247U;
         static const AkUniqueID SFX_BARREL_BREAK = 3160813989U;
+        static const AkUniqueID SFX_BARREL_HIT = 664197207U;
         static const AkUniqueID SFX_BOSS_DEATH = 3464347765U;
         static const AkUniqueID SFX_BOSS_FOOTSTEP = 2035754667U;
         static const AkUniqueID SFX_BOSS_HIT = 345945556U;
@@ -70,6 +71,12 @@ namespace AK
         } // namespace GAME_STATE_GROUP
 
     } // namespace STATES
+
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID PLAYERHEALTH = 151362964U;
+        static const AkUniqueID ZOOMRATIO = 1226036737U;
+    } // namespace GAME_PARAMETERS
 
     namespace BANKS
     {

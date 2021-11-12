@@ -113,7 +113,7 @@ namespace CreatorKitCode
         /// <param name="data">The PlayData that contains all the data of the sound to play (clip, volume, position etc.)</param>
         public static void PlaySound(Use useType, PlayData data, GameObject gameObject = null)
         {
-            Debug.Log("PlaySound() useType: " + useType + "   data.Clip.name : " + data.Clip.name + "   data.Position: " + data.Position);
+            //Debug.Log("PlaySound() useType: " + useType + "   data.Clip.name : " + data.Clip.name + "   data.Position: " + data.Position);
 
             //get the right audiosource
             var source = GetSource(useType);   // usetype is either Player, Enemies, WorldSound, Sound2D

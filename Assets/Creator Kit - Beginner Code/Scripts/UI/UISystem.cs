@@ -131,6 +131,7 @@ namespace CreatorKitCodeInternal
                 InventoryWindow.gameObject.SetActive(false);
                 SFXManager.PlaySound(SFXManager.Use.Sound2D, new SFXManager.PlayData() { Clip = CloseInventoryClip });
                 AkSoundEngine.PostEvent("sfx_inventory_close", GameObject.Find("WwiseGlobal"));
+                Debug.Log("sfx_inventory_close");
             }
             else
             {
@@ -139,6 +140,7 @@ namespace CreatorKitCodeInternal
                 InventoryWindow.Load(PlayerCharacter.Data);
                 SFXManager.PlaySound(SFXManager.Use.Sound2D, new SFXManager.PlayData() { Clip = OpenInventoryClip });
                 AkSoundEngine.PostEvent("sfx_inventory_open", GameObject.Find("WwiseGlobal"));
+                Debug.Log("sfx_inventory_open");
 
             }
         }

@@ -60,6 +60,8 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -71,6 +73,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -83,6 +86,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!65 &3926150881649767607
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -119,6 +123,11 @@ MonoBehaviour:
       elementalBoosts: 00000000000000000000000000000000
   StartingWeapon: {fileID: 0}
   HitClip: []
+  HitEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: de473eef450114f439ee09c1afadec12,
+      type: 2}
 --- !u!114 &3926150881649767608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133,6 +142,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DestroyedChild: {fileID: 3415388202563236075}
   BreakingAudioClip: {fileID: 8300000, guid: 299314922ca5fd748ac9077ae291b758, type: 3}
+  BreakingAudioEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: c9bb25d2a10eb4f0180e32cfa08dfef1,
+      type: 2}
 --- !u!114 &3926150881649767609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,6 +161,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Events: []
   SpawnedClip: {fileID: 8300000, guid: aa9f51999376d094486f2363c9a8219d, type: 3}
+  SpawnedEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!208 &3926150881649767614
 NavMeshObstacle:
   m_ObjectHideFlags: 0
@@ -182,6 +200,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4028575572273812783, guid: 55a2e7512648cf44eb13aad7dcca8c49,
         type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4028575572273812783, guid: 55a2e7512648cf44eb13aad7dcca8c49,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -197,6 +220,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4028575572273812783, guid: 55a2e7512648cf44eb13aad7dcca8c49,
         type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4028575572273812783, guid: 55a2e7512648cf44eb13aad7dcca8c49,
+        type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
@@ -208,16 +236,6 @@ PrefabInstance:
     - target: {fileID: 4028575572273812783, guid: 55a2e7512648cf44eb13aad7dcca8c49,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4028575572273812783, guid: 55a2e7512648cf44eb13aad7dcca8c49,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4028575572273812783, guid: 55a2e7512648cf44eb13aad7dcca8c49,
-        type: 3}
-      propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4028575572273812783, guid: 55a2e7512648cf44eb13aad7dcca8c49,

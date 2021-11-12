@@ -4,6 +4,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	301602619	sfx_moose_relieved			\Default Work Unit\sfx_moose\sfx_moose_relieved	
 	345945556	sfx_boss_hit			\Default Work Unit\sfx_boss\sfx_boss_hit	
 	527156789	sfx_cactus_vox_attack			\Default Work Unit\sfx_cactus\sfx_cactus_vox_attack	
+	664197207	sfx_barrel_hit			\Default Work Unit\sfx_items\sfx_barrel_hit	
 	733168346	game_start			\Default Work Unit\game_start	
 	1226390608	sfx_enemy_idle			\Default Work Unit\sfx_enemy\sfx_enemy_idle	
 	1347543854	sfx_rake_spawn			\Default Work Unit\sfx_items\sfx_rake_spawn	

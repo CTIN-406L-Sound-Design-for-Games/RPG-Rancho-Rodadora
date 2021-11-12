@@ -86,11 +86,13 @@ namespace CreatorKitCodeInternal
                 {
                     SFXManager.PlaySound(SFXManager.Use.Sound2D, new SFXManager.PlayData() { Clip = SFXManager.ItemEquippedSound });
                     AkSoundEngine.PostEvent("sfx_item_equip", GameObject.Find("WwiseGlobal"));
+                    Debug.Log("sfx_item_equip");
                 }
                 else
                 {
                     SFXManager.PlaySound(SFXManager.Use.Sound2D, new SFXManager.PlayData() { Clip = SFXManager.ItemUsedSound });
                     AkSoundEngine.PostEvent("sfx_item_use", GameObject.Find("WwiseGlobal"));
+                    Debug.Log("sfx_item_use");
                 }
                 //SFXManager.PlaySound(SFXManager.Use.Sound2D, new SFXManager.PlayData() {Clip = usedItem.Item is EquipmentItem ? SFXManager.ItemEquippedSound : SFXManager.ItemUsedSound} );
             }

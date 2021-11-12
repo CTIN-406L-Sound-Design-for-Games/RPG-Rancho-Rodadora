@@ -586,6 +586,21 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="sfx_barrel_hit" ID="{27735860-BCE0-4827-AA0C-FCF076D0CE80}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{E79474FB-2E1E-45AE-9134-ECDDB8B63ED2}" ShortID="884481275">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="beep" ID="{E55CC1E3-B468-4F4B-9B7F-E8C729B32DB6}" WorkUnitID="{9332E975-D965-445E-8227-3D41CC629B0F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

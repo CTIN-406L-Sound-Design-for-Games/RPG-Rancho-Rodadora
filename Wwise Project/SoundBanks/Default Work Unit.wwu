@@ -28,6 +28,7 @@
 						<ObjectRef Name="sfx_moose_vox_attack" ID="{28A1E586-4752-470F-8B8D-CA91A7B4CC6D}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="sfx_moose_relieved" ID="{EC36C695-84B2-4711-B67F-D5B14E685BB0}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="sfx_ambience_far" ID="{82B47DF8-3324-47B0-9DD2-F7500CE63B5B}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="sfx_barrel_hit" ID="{27735860-BCE0-4827-AA0C-FCF076D0CE80}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="sfx_cactus_hit" ID="{F8780596-8330-4845-8579-F4B12E128713}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="sfx_cactus_footstep" ID="{FBEB33F2-C291-484F-879C-5ECA8B5F26B3}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="sfx_cactus_death" ID="{88DCAE72-5388-4852-9E49-8E533BC67175}" WorkUnitID="{72A433D1-2A0F-42C6-A29D-29392373EE43}" Origin="Manual" Filter="7"/>
