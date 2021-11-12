@@ -488,6 +488,7 @@ namespace CreatorKitCodeInternal
             });
 
             SpurSoundEvent.Post(this.gameObject);
+            Debug.Log(SpurSoundEvent);
 
             VFXManager.PlayVFX(VFXType.StepPuff, pos);
         }

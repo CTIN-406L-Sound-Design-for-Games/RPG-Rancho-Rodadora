@@ -111,6 +111,7 @@ namespace CreatorKitCodeInternal
                             }
 
                             SpottedAudioEvent.Post(this.gameObject);
+                            Debug.Log(SpottedAudioEvent);
 
                             m_PursuitTimer = 4.0f;
                             m_State = State.PURSUING;

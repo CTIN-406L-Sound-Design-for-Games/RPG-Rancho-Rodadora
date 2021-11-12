@@ -42,7 +42,7 @@ namespace CreatorKitCodeInternal
 
                 SFXManager.PlaySound(SFXManager.Use.WorldSound, new SFXManager.PlayData() { Clip = BreakingAudioClip });
                 BreakingAudioEvent.Post(this.gameObject);
-
+                Debug.Log(BreakingAudioEvent);
                 Destroy(gameObject);
             }
         }

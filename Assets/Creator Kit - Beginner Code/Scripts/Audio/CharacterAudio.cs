@@ -33,6 +33,8 @@ namespace CreatorKitCodeInternal
             });
 
             VocalAttackEvent.Post(this.gameObject);
+            Debug.Log(VocalAttackEvent);
+
         }
 
         public void Hit(Vector3 position)
@@ -47,6 +49,7 @@ namespace CreatorKitCodeInternal
             });
 
             VocalHitEvent.Post(this.gameObject);
+            Debug.Log(VocalHitEvent);
         }
 
         public void Step(Vector3 position)
@@ -64,6 +67,7 @@ namespace CreatorKitCodeInternal
             });
 
             FootstepEvent.Post(this.gameObject);
+            Debug.Log(FootstepEvent);
         }
 
         public void Death(Vector3 position)
@@ -78,6 +82,7 @@ namespace CreatorKitCodeInternal
             });
 
             DeathEvent.Post(this.gameObject);
+            Debug.Log(DeathEvent);
         }
     }
 }

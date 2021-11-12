@@ -152,6 +152,7 @@ namespace CreatorKitCode
             }
 
             HitEvent.Post(this.gameObject);
+            Debug.Log(HitEvent);
 
             Stats.Damage(attackData);
 
